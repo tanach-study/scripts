@@ -1,0 +1,262 @@
+﻿[
+ {
+   "Parsha": "Bereishit",
+   "Date": "14-Oct",
+   "Portion": "Genesis 1:1 - 6:8"
+ },
+ {
+   "Parsha": "Noah",
+   "Date": "21-Oct",
+   "Portion": "Genesis 6:9 - 11:32"
+ },
+ {
+   "Parsha": "Lech Lechah",
+   "Date": "28-Oct",
+   "Portion": "Genesis 12:1 - 17:27"
+ },
+ {
+   "Parsha": "Va'yeirah",
+   "Date": "4-Nov",
+   "Portion": "Genesis 18:1 - 22:24"
+ },
+ {
+   "Parsha": "Chayei Sarah",
+   "Date": "11-Nov",
+   "Portion": "Genesis 23:1 - 25:18"
+ },
+ {
+   "Parsha": "Toldot",
+   "Date": "18-Nov",
+   "Portion": "Genesis 25:19 - 28:9"
+ },
+ {
+   "Parsha": "Va'yeitzi",
+   "Date": "25-Nov",
+   "Portion": "Genesis 28:10 - 32:3"
+ },
+ {
+   "Parsha": "Va'yishlach",
+   "Date": "2-Dec",
+   "Portion": "Genesis 32:4 - 36:43"
+ },
+ {
+   "Parsha": "Va'yeishev",
+   "Date": "9-Dec",
+   "Portion": "Genesis 37:1 - 40:23"
+ },
+ {
+   "Parsha": "Miketz",
+   "Date": "16-Dec",
+   "Portion": "Genesis 41:1 - 44:17"
+ },
+ {
+   "Parsha": "Va'yigash",
+   "Date": "23-Dec",
+   "Portion": "Genesis 44:18 - 47:27"
+ },
+ {
+   "Parsha": "Va'yechi",
+   "Date": "30-Dec",
+   "Portion": "Genesis 47:28 - 50:26"
+ },
+ {
+   "Parsha": "Shemot",
+   "Date": "6-Jan-18",
+   "Portion": "Exodus 1:1 - 6:1"
+ },
+ {
+   "Parsha": "Va'eirah",
+   "Date": "13-Jan",
+   "Portion": "Exodus 6:2 - 9:35"
+ },
+ {
+   "Parsha": "Bo",
+   "Date": "20-Jan",
+   "Portion": "Exodus 10:1 - 13:16"
+ },
+ {
+   "Parsha": "Beshalach",
+   "Date": "27-Jan",
+   "Portion": "Exodus 13:17 - 17:16"
+ },
+ {
+   "Parsha": "Yitro",
+   "Date": "3-Feb",
+   "Portion": "Exodus 18:1 - 20:23"
+ },
+ {
+   "Parsha": "Mishpatim",
+   "Date": "10-Feb",
+   "Portion": "Exodus 21:1 - 24:18"
+ },
+ {
+   "Parsha": "Terumah",
+   "Date": "17-Feb",
+   "Portion": "Exodus 25:1 - 27:19"
+ },
+ {
+   "Parsha": "Tetzaveh",
+   "Date": "24-Feb",
+   "Portion": "Exodus 27:20 - 30:10"
+ },
+ {
+   "Parsha": "Ki Tisa",
+   "Date": "3-Mar",
+   "Portion": "Exodus 30:11 - 34:35"
+ },
+ {
+   "Parsha": "Va'yakhel",
+   "Date": "10-Mar",
+   "Portion": "Exodus 35:1 - 38:20"
+ },
+ {
+   "Parsha": "Pekudi",
+   "Date": "10-Mar",
+   "Portion": "Exodus 38:21 - 40:38"
+ },
+ {
+   "Parsha": "Va'yikrah",
+   "Date": "17-Mar",
+   "Portion": "Leviticus 1:1 - 5:26"
+ },
+ {
+   "Parsha": "Tzav",
+   "Date": "24-Mar",
+   "Portion": "Leviticus 6:1 - 8:36"
+ },
+ {
+   "Parsha": "Shemini",
+   "Date": "14-Apr",
+   "Portion": "Leviticus 9:1 - 11:47"
+ },
+ {
+   "Parsha": "Tazriah",
+   "Date": "21-Apr",
+   "Portion": "Leviticus 12:1 - 13:59"
+ },
+ {
+   "Parsha": "Metzorah",
+   "Date": "21-Apr",
+   "Portion": "Leviticus 14:1 - 15:33"
+ },
+ {
+   "Parsha": "Acharei Mot",
+   "Date": "28-Apr",
+   "Portion": "Leviticus 16:1 - 18:30"
+ },
+ {
+   "Parsha": "Kedoshim",
+   "Date": "28-Apr",
+   "Portion": "Leviticus 19:1 - 20:27"
+ },
+ {
+   "Parsha": "Emor",
+   "Date": "5-May",
+   "Portion": "Leviticus 21:1 - 24:23"
+ },
+ {
+   "Parsha": "Behar",
+   "Date": "12-May",
+   "Portion": "Leviticus 25:1 -26:2"
+ },
+ {
+   "Parsha": "Bechukotai",
+   "Date": "12-May",
+   "Portion": "Leviticus 26:3 - 27:34"
+ },
+ {
+   "Parsha": "Bamidbar",
+   "Date": "19-May",
+   "Portion": "Numbers 1:1 - 4:20"
+ },
+ {
+   "Parsha": "Nasso",
+   "Date": "26-May",
+   "Portion": "Numbers 4:21 - 7:89"
+ },
+ {
+   "Parsha": "Behaalotchah",
+   "Date": "2-Jun",
+   "Portion": "Numbers 8:1 - 12:16"
+ },
+ {
+   "Parsha": "Shelach Lecha",
+   "Date": "9-Jun",
+   "Portion": "Numbers 13:1 - 15:41"
+ },
+ {
+   "Parsha": "Korach",
+   "Date": "16-Jun",
+   "Portion": "Numbers 16:1 - 18:32"
+ },
+ {
+   "Parsha": "Chukat",
+   "Date": "23-Jun",
+   "Portion": "Numbers 19:1 - 22:1"
+ },
+ {
+   "Parsha": "Balak",
+   "Date": "30-Jun",
+   "Portion": "Numbers 22:2 - 25:9"
+ },
+ {
+   "Parsha": "Pinchas",
+   "Date": "7-Jul",
+   "Portion": "Numbers 25:10 - 30:1"
+ },
+ {
+   "Parsha": "Matot and",
+   "Date": "14-Jul",
+   "Portion": "Numbers 30:2 - 32:42"
+ },
+ {
+   "Parsha": "Masei",
+   "Date": "14-Jul",
+   "Portion": "Numbers 33:1 - 36:13"
+ },
+ {
+   "Parsha": "Devarim",
+   "Date": "21-Jul",
+   "Portion": "Deuteronomy 1:1 - 3:22"
+ },
+ {
+   "Parsha": "Va'etchanan",
+   "Date": "28-Jul",
+   "Portion": "Deuteronomy 3:23 - 7:11"
+ },
+ {
+   "Parsha": "Eikev",
+   "Date": "4-Aug",
+   "Portion": "Deuteronomy 7:12 - 11:25"
+ },
+ {
+   "Parsha": "Re'ei",
+   "Date": "11-Aug",
+   "Portion": "Deuteronomy 11:26 - 16:17"
+ },
+ {
+   "Parsha": "Shoftim",
+   "Date": "18-Aug",
+   "Portion": "Deuteronomy 16:18 - 21:9"
+ },
+ {
+   "Parsha": "Ki Teitzei",
+   "Date": "25-Aug",
+   "Portion": "Deuteronomy 21:10 - 25:19"
+ },
+ {
+   "Parsha": "Ki Tavo",
+   "Date": "1-Sep",
+   "Portion": "Deuteronomy 26:1 - 29:8"
+ },
+ {
+   "Parsha": "Nitzavim",
+   "Date": "8-Sep",
+   "Portion": "Deuteronomy 29:9 - 30:20"
+ },
+ {
+   "Parsha": "",
+   "Date": "",
+   "Portion": ""
+ }
+]
