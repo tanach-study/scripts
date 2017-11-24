@@ -1,262 +1,542 @@
-﻿[
+[
  {
-   "Parsha": "Bereishit",
+   "Book": "Bereshit",
+   "Parsha": "Bereshit",
    "Date": "14-Oct",
-   "Portion": "Genesis 1:1 - 6:8"
+   "Portion": "Genesis 1:1 - 6:8",
+   "Title": "Rabbi",
+   "First": "Alex",
+   "Last": "Israel",
+   "ID": 1030
  },
  {
+   "Book": "Bereshit",
    "Parsha": "Noah",
    "Date": "21-Oct",
-   "Portion": "Genesis 6:9 - 11:32"
+   "Portion": "Genesis 6:9 - 11:32",
+   "Title": "Rabbi",
+   "First": "Alex",
+   "Last": "Israel",
+   "ID": 1030
  },
  {
-   "Parsha": "Lech Lechah",
+   "Book": "Bereshit",
+   "Parsha": "Lech Lecha",
    "Date": "28-Oct",
-   "Portion": "Genesis 12:1 - 17:27"
+   "Portion": "Genesis 12:1 - 17:27",
+   "Title": "Rabbi",
+   "First": "Alex",
+   "Last": "Israel",
+   "ID": 1030
  },
  {
-   "Parsha": "Va'yeirah",
+   "Book": "Bereshit",
+   "Parsha": "Vayera",
    "Date": "4-Nov",
-   "Portion": "Genesis 18:1 - 22:24"
+   "Portion": "Genesis 18:1 - 22:24",
+   "Title": "Rabbi",
+   "First": "Alex",
+   "Last": "Israel",
+   "ID": 1030
  },
  {
-   "Parsha": "Chayei Sarah",
+   "Book": "Bereshit",
+   "Parsha": "Haye Sarah",
    "Date": "11-Nov",
-   "Portion": "Genesis 23:1 - 25:18"
+   "Portion": "Genesis 23:1 - 25:18",
+   "Title": "Rabbi",
+   "First": "Alex",
+   "Last": "Israel",
+   "ID": 1030
  },
  {
-   "Parsha": "Toldot",
+   "Book": "Bereshit",
+   "Parsha": "Toledot",
    "Date": "18-Nov",
-   "Portion": "Genesis 25:19 - 28:9"
+   "Portion": "Genesis 25:19 - 28:9",
+   "Title": "Rabbi",
+   "First": "Gad",
+   "Last": "Dishi",
+   "ID": 1004
  },
  {
-   "Parsha": "Va'yeitzi",
+   "Book": "Bereshit",
+   "Parsha": "Vayetze",
    "Date": "25-Nov",
-   "Portion": "Genesis 28:10 - 32:3"
+   "Portion": "Genesis 28:10 - 32:3",
+   "Title": "Rabbi",
+   "First": "Gad",
+   "Last": "Dishi",
+   "ID": 1004
  },
  {
-   "Parsha": "Va'yishlach",
+   "Book": "Bereshit",
+   "Parsha": "Vayishlah",
    "Date": "2-Dec",
-   "Portion": "Genesis 32:4 - 36:43"
+   "Portion": "Genesis 32:4 - 36:43",
+   "Title": "Rabbi",
+   "First": "Gad",
+   "Last": "Dishi",
+   "ID": 1004
  },
  {
-   "Parsha": "Va'yeishev",
+   "Book": "Bereshit",
+   "Parsha": "Vayeshev",
    "Date": "9-Dec",
-   "Portion": "Genesis 37:1 - 40:23"
+   "Portion": "Genesis 37:1 - 40:23",
+   "Title": "Dr.",
+   "First": "Avigail",
+   "Last": "Rock",
+   "ID": null
  },
  {
+   "Book": "Bereshit",
    "Parsha": "Miketz",
    "Date": "16-Dec",
-   "Portion": "Genesis 41:1 - 44:17"
+   "Portion": "Genesis 41:1 - 44:17",
+   "Title": "Dr.",
+   "First": "Avigail",
+   "Last": "Rock",
+   "ID": null
  },
  {
-   "Parsha": "Va'yigash",
+   "Book": "Bereshit",
+   "Parsha": "Vayigash",
    "Date": "23-Dec",
-   "Portion": "Genesis 44:18 - 47:27"
+   "Portion": "Genesis 44:18 - 47:27",
+   "Title": "Dr.",
+   "First": "Avigail",
+   "Last": "Rock",
+   "ID": null
  },
  {
-   "Parsha": "Va'yechi",
+   "Book": "Bereshit",
+   "Parsha": "Vayhi",
    "Date": "30-Dec",
-   "Portion": "Genesis 47:28 - 50:26"
+   "Portion": "Genesis 47:28 - 50:26",
+   "Title": "Dr.",
+   "First": "Avigail",
+   "Last": "Rock",
+   "ID": null
  },
  {
+   "Book": "Shemot",
    "Parsha": "Shemot",
    "Date": "6-Jan-18",
-   "Portion": "Exodus 1:1 - 6:1"
+   "Portion": "Exodus 1:1 - 6:1",
+   "Title": "Dr.",
+   "First": "Yael",
+   "Last": "Ziegler",
+   "ID": null
  },
  {
-   "Parsha": "Va'eirah",
+   "Book": "Shemot",
+   "Parsha": "Vaera",
    "Date": "13-Jan",
-   "Portion": "Exodus 6:2 - 9:35"
+   "Portion": "Exodus 6:2 - 9:35",
+   "Title": "Dr.",
+   "First": "Yael",
+   "Last": "Ziegler",
+   "ID": null
  },
  {
+   "Book": "Shemot",
    "Parsha": "Bo",
    "Date": "20-Jan",
-   "Portion": "Exodus 10:1 - 13:16"
+   "Portion": "Exodus 10:1 - 13:16",
+   "Title": "Dr.",
+   "First": "Yael",
+   "Last": "Ziegler",
+   "ID": null
  },
  {
-   "Parsha": "Beshalach",
+   "Book": "Shemot",
+   "Parsha": "Beshalah",
    "Date": "27-Jan",
-   "Portion": "Exodus 13:17 - 17:16"
+   "Portion": "Exodus 13:17 - 17:16",
+   "Title": "Dr.",
+   "First": "Yael",
+   "Last": "Ziegler",
+   "ID": null
  },
  {
+   "Book": "Shemot",
    "Parsha": "Yitro",
    "Date": "3-Feb",
-   "Portion": "Exodus 18:1 - 20:23"
+   "Portion": "Exodus 18:1 - 20:23",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
+   "Book": "Shemot",
    "Parsha": "Mishpatim",
    "Date": "10-Feb",
-   "Portion": "Exodus 21:1 - 24:18"
+   "Portion": "Exodus 21:1 - 24:18",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
-   "Parsha": "Terumah",
+   "Book": "Shemot",
+   "Parsha": "Teruma",
    "Date": "17-Feb",
-   "Portion": "Exodus 25:1 - 27:19"
+   "Portion": "Exodus 25:1 - 27:19",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
-   "Parsha": "Tetzaveh",
+   "Book": "Shemot",
+   "Parsha": "Tetzave",
    "Date": "24-Feb",
-   "Portion": "Exodus 27:20 - 30:10"
+   "Portion": "Exodus 27:20 - 30:10",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
+   "Book": "Shemot",
    "Parsha": "Ki Tisa",
    "Date": "3-Mar",
-   "Portion": "Exodus 30:11 - 34:35"
+   "Portion": "Exodus 30:11 - 34:35",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
-   "Parsha": "Va'yakhel",
+   "Book": "Shemot",
+   "Parsha": "Vayakhel",
    "Date": "10-Mar",
-   "Portion": "Exodus 35:1 - 38:20"
+   "Portion": "Exodus 35:1 - 38:20",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
-   "Parsha": "Pekudi",
+   "Book": "Shemot",
+   "Parsha": "Pekude",
    "Date": "10-Mar",
-   "Portion": "Exodus 38:21 - 40:38"
+   "Portion": "Exodus 38:21 - 40:38",
+   "Title": "Rabbi",
+   "First": "Yitzchak",
+   "Last": "Etshalom",
+   "ID": 1015
  },
  {
-   "Parsha": "Va'yikrah",
+   "Book": "Vayikra",
+   "Parsha": "Vayikra",
    "Date": "17-Mar",
-   "Portion": "Leviticus 1:1 - 5:26"
+   "Portion": "Leviticus 1:1 - 5:26",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
+   "Book": "Vayikra",
    "Parsha": "Tzav",
    "Date": "24-Mar",
-   "Portion": "Leviticus 6:1 - 8:36"
+   "Portion": "Leviticus 6:1 - 8:36",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
+   "Book": "Vayikra",
    "Parsha": "Shemini",
    "Date": "14-Apr",
-   "Portion": "Leviticus 9:1 - 11:47"
+   "Portion": "Leviticus 9:1 - 11:47",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
-   "Parsha": "Tazriah",
+   "Book": "Vayikra",
+   "Parsha": "Tazria",
    "Date": "21-Apr",
-   "Portion": "Leviticus 12:1 - 13:59"
+   "Portion": "Leviticus 12:1 - 13:59",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
-   "Parsha": "Metzorah",
+   "Book": "Vayikra",
+   "Parsha": "Metzora",
    "Date": "21-Apr",
-   "Portion": "Leviticus 14:1 - 15:33"
+   "Portion": "Leviticus 14:1 - 15:33",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
-   "Parsha": "Acharei Mot",
+   "Book": "Vayikra",
+   "Parsha": "Aharei Mot",
    "Date": "28-Apr",
-   "Portion": "Leviticus 16:1 - 18:30"
+   "Portion": "Leviticus 16:1 - 18:30",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
+   "Book": "Vayikra",
    "Parsha": "Kedoshim",
    "Date": "28-Apr",
-   "Portion": "Leviticus 19:1 - 20:27"
+   "Portion": "Leviticus 19:1 - 20:27",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
+   "Book": "Vayikra",
    "Parsha": "Emor",
    "Date": "5-May",
-   "Portion": "Leviticus 21:1 - 24:23"
+   "Portion": "Leviticus 21:1 - 24:23",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
+   "Book": "Vayikra",
    "Parsha": "Behar",
    "Date": "12-May",
-   "Portion": "Leviticus 25:1 -26:2"
+   "Portion": "Leviticus 25:1 - 26:2",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
-   "Parsha": "Bechukotai",
+   "Book": "Vayikra",
+   "Parsha": "Behukotai",
    "Date": "12-May",
-   "Portion": "Leviticus 26:3 - 27:34"
+   "Portion": "Leviticus 26:3 - 27:34",
+   "Title": "Mrs.",
+   "First": "Shani",
+   "Last": "Taragin",
+   "ID": 1023
  },
  {
-   "Parsha": "Bamidbar",
+   "Book": "Bemidbar",
+   "Parsha": "Bemidbar",
    "Date": "19-May",
-   "Portion": "Numbers 1:1 - 4:20"
+   "Portion": "Numbers 1:1 - 4:20",
+   "Title": "Rabbi",
+   "First": "Jonathan",
+   "Last": "Snowbell",
+   "ID": null
  },
  {
+   "Book": "Bemidbar",
    "Parsha": "Nasso",
    "Date": "26-May",
-   "Portion": "Numbers 4:21 - 7:89"
+   "Portion": "Numbers 4:21 - 7:89",
+   "Title": "Rabbi",
+   "First": "Jonathan",
+   "Last": "Snowbell",
+   "ID": null
  },
  {
-   "Parsha": "Behaalotchah",
+   "Book": "Bemidbar",
+   "Parsha": "Behaalotecha",
    "Date": "2-Jun",
-   "Portion": "Numbers 8:1 - 12:16"
+   "Portion": "Numbers 8:1 - 12:16",
+   "Title": "Rabbi",
+   "First": "Jonathan",
+   "Last": "Snowbell",
+   "ID": null
  },
  {
-   "Parsha": "Shelach Lecha",
+   "Book": "Bemidbar",
+   "Parsha": "Shelah",
    "Date": "9-Jun",
-   "Portion": "Numbers 13:1 - 15:41"
+   "Portion": "Numbers 13:1 - 15:41",
+   "Title": "Rabbi",
+   "First": "Jonathan",
+   "Last": "Snowbell",
+   "ID": null
  },
  {
-   "Parsha": "Korach",
+   "Book": "Bemidbar",
+   "Parsha": "Korah",
    "Date": "16-Jun",
-   "Portion": "Numbers 16:1 - 18:32"
+   "Portion": "Numbers 16:1 - 18:32",
+   "Title": "Rabbi",
+   "First": "Jonathan",
+   "Last": "Snowbell",
+   "ID": null
  },
  {
-   "Parsha": "Chukat",
+   "Book": "Bemidbar",
+   "Parsha": "Hukat",
    "Date": "23-Jun",
-   "Portion": "Numbers 19:1 - 22:1"
+   "Portion": "Numbers 19:1 - 22:1",
+   "Title": "Mrs.",
+   "First": "Yosefa",
+   "Last": "Wruble",
+   "ID": null
  },
  {
+   "Book": "Bemidbar",
    "Parsha": "Balak",
    "Date": "30-Jun",
-   "Portion": "Numbers 22:2 - 25:9"
+   "Portion": "Numbers 22:2 - 25:9",
+   "Title": "Mrs.",
+   "First": "Yosefa",
+   "Last": "Wruble",
+   "ID": null
  },
  {
-   "Parsha": "Pinchas",
+   "Book": "Bemidbar",
+   "Parsha": "Pinehas",
    "Date": "7-Jul",
-   "Portion": "Numbers 25:10 - 30:1"
+   "Portion": "Numbers 25:10 - 30:1",
+   "Title": "Mrs.",
+   "First": "Yosefa",
+   "Last": "Wruble",
+   "ID": null
  },
  {
-   "Parsha": "Matot and",
+   "Book": "Bemidbar",
+   "Parsha": "Matot",
    "Date": "14-Jul",
-   "Portion": "Numbers 30:2 - 32:42"
+   "Portion": "Numbers 30:2 - 32:42",
+   "Title": "Mrs.",
+   "First": "Yosefa",
+   "Last": "Wruble",
+   "ID": null
  },
  {
+   "Book": "Bemidbar",
    "Parsha": "Masei",
    "Date": "14-Jul",
-   "Portion": "Numbers 33:1 - 36:13"
+   "Portion": "Numbers 33:1 - 36:13",
+   "Title": "Mrs.",
+   "First": "Yosefa",
+   "Last": "Wruble",
+   "ID": null
  },
  {
+   "Book": "Devarim",
    "Parsha": "Devarim",
    "Date": "21-Jul",
-   "Portion": "Deuteronomy 1:1 - 3:22"
+   "Portion": "Deuteronomy 1:1 - 3:22",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "Va'etchanan",
+   "Book": "Devarim",
+   "Parsha": "Vaethanan",
    "Date": "28-Jul",
-   "Portion": "Deuteronomy 3:23 - 7:11"
+   "Portion": "Deuteronomy 3:23 - 7:11",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "Eikev",
+   "Book": "Devarim",
+   "Parsha": "Ekev",
    "Date": "4-Aug",
-   "Portion": "Deuteronomy 7:12 - 11:25"
+   "Portion": "Deuteronomy 7:12 - 11:25",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "Re'ei",
+   "Book": "Devarim",
+   "Parsha": "Re'e",
    "Date": "11-Aug",
-   "Portion": "Deuteronomy 11:26 - 16:17"
+   "Portion": "Deuteronomy 11:26 - 16:17",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "Shoftim",
+   "Book": "Devarim",
+   "Parsha": "Shofetim",
    "Date": "18-Aug",
-   "Portion": "Deuteronomy 16:18 - 21:9"
+   "Portion": "Deuteronomy 16:18 - 21:9",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "Ki Teitzei",
+   "Book": "Devarim",
+   "Parsha": "Ki Tetze",
    "Date": "25-Aug",
-   "Portion": "Deuteronomy 21:10 - 25:19"
+   "Portion": "Deuteronomy 21:10 - 25:19",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
+   "Book": "Devarim",
    "Parsha": "Ki Tavo",
    "Date": "1-Sep",
-   "Portion": "Deuteronomy 26:1 - 29:8"
+   "Portion": "Deuteronomy 26:1 - 29:8",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
+   "Book": "Devarim",
    "Parsha": "Nitzavim",
    "Date": "8-Sep",
-   "Portion": "Deuteronomy 29:9 - 30:20"
+   "Portion": "Deuteronomy 29:9 - 30:20",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  },
  {
-   "Parsha": "",
-   "Date": "",
-   "Portion": ""
+   "Book": "Devarim",
+   "Parsha": "Vayelech",
+   "Date": "15-Sep",
+   "Portion": "Deuteronomy 31:1 - 31:30",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
+ },
+ {
+   "Book": "Devarim",
+   "Parsha": "Haazinu",
+   "Date": "22-Sep",
+   "Portion": "Deuteronomy 32:1 - 32:52",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
+ },
+ {
+   "Book": "Devarim",
+   "Parsha": "Vezot Haberacha",
+   "Date": "2-Oct",
+   "Portion": "Deuteronomy 33:1 - 34:12",
+   "Title": "Rabbi",
+   "First": "Menachem",
+   "Last": "Leibtag",
+   "ID": null
  }
 ]

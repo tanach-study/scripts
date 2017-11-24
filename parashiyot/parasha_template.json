@@ -1,0 +1,90 @@
+{
+  "teacher_bio": null,
+  "teacher_title": null,
+  "teacher_fname": null,
+  "teacher_mname": null,
+  "teacher_lname": null,
+  "reader_bio": null,
+  "reader_title": null,
+  "reader_fname": null,
+  "reader_mname": null,
+  "reader_lname": null,
+  "part_id": 5,
+  "part_name": "torah",
+  "is_many_parts": false,
+  "parts_breakdown": [
+    {
+      "number": 1,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    },
+    {
+      "number": 2,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    },
+    {
+      "number": 3,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    },
+    {
+      "number": 4,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    },
+    {
+      "number": 5,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    },
+    {
+      "number": 6,
+      "title": "",
+      "start_chapter": null,
+      "start_verse": null,
+      "end_chapter": null,
+      "end_verse": null
+    }
+  ],
+  "perek_id": null,
+  "teacher_id": null,
+  "reader_id": null,
+  "book_id": null,
+  "book_num_chapters": null,
+  "book_name_pretty_eng": null,
+  "parasha_name_pretty_eng": null,
+  "book_name": null,
+  "prev_book_id": null,
+  "prev_book_name": null,
+  "prev_book_num_chapters": null,
+  "next_book_id": null,
+  "next_book_name": null,
+  "next_book_num_chapters": null,
+  "hebrew_text": [],
+  "english_text": [],
+  "sefer": null,
+  "sefer_sponsor": null,
+  "parasha_sponsor": null,
+  "start_chapter": null,
+  "start_verse": null,
+  "end_chapter": null,
+  "end_verse": null
+}
+
+
