@@ -138,6 +138,8 @@ parashiyot.forEach((p, i) => {
 
   const file = `${i < 9 ? '0' + (i + 1) : i + 1}-${parasha}.json`;
 
+  books[book].push(parashaItem);
+
   fs.writeFileSync(`${path.resolve(__dirname, 'output')}/${file}`, JSON.stringify(parashaItem));
 
 });
