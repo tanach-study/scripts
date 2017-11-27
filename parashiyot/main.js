@@ -45,11 +45,11 @@ const sefarimMeta = {
 };
 
 // load the parashiyot JSON
-const parashiyot = require('./parashiyot.json');
+const parashiyot      = require('./parashiyot.json');
 // load the entire text of the tanach, obtained from Sefaria as a JSON
-const tanach     = require(TANACH_FILE);
+const tanach          = require(TANACH_FILE);
 // load the sefer template
-const seferTemplate = require('./sefer_template.json');
+const seferTemplate   = require('./sefer_template.json');
 // load the parasha template
 const parashaTemplate = require('./parasha_template.json');
 
@@ -65,81 +65,190 @@ const parashaSponsors = {
   bereshit: 'In Refuah Shelemah for Sarah bat Viviane Sponsored by Joseph Wahba',
 };
 
-const books = {
+const bookParashiyot = {
   bereshit: [],
   shemot: [],
-  vaiykra: [],
+  vayikra: [],
   bemidbar: [],
   devarim: [],
 }
 
-parashiyot.forEach((p, i) => {
-  const parashaItem = Object.assign({}, parashaTemplate);
+const bookTeachers = {
+  bereshit: [],
+  shemot: [],
+  vayikra: [],
+  bemidbar: [],
+  devarim: [],
+}
 
-  const book = p.Book.toLowerCase();
-  const parasha = p.Parsha.toLowerCase().replace(' ', '-');
+let teachers = [];
 
-  const parsedPortion = p.Portion.split(' ');
-  const startPortion = parsedPortion[1].split(':');
-  const endPortion = parsedPortion[3].split(':');
+const prev = {
+  id: null,
+  name: null,
+};
 
-  parashaItem.sefer = book;
-  parashaItem.book_name = book;
-  parashaItem.book_name_pretty_eng = p.Book;
+const next = {
+  id: null,
+  name: null,
+};
 
-  parashaItem.perek_id = parasha;
-  parashaItem.parasha_name_pretty_eng = p.Parsha;
+function getAllTeacherData() {
+  fetch('https://api.tanachstudy.com/teachers')
+  .then(r => r.json())
+  .then(t => {
+    console.log('have teachers');
+    teachers = t;
+    generateParashaSeeds()
+  })
+  .catch(err => console.error(err))
+}
 
-  parashaItem.book_id = sefarimMeta[book].book_id;
-  parashaItem.book_num_chapters = sefarimMeta[book].numchapters;
+function generateParashaSeeds() {
+  parashiyot.forEach((p, i) => {
+    const parashaItem = Object.assign({}, parashaTemplate);
 
-  parashaItem.sefer_sponsor = seferSponsors[book];
-  parashaItem.parasha_sponsor = parashaSponsors[parasha] || '';
-
-  parashaItem.start_chapter = parseInt(startPortion[0]);
-  parashaItem.start_verse = parseInt(startPortion[1]);
-  parashaItem.end_chapter = parseInt(endPortion[0]);
-  parashaItem.end_verse = parseInt(endPortion[1]);
-
-  parashaItem.teacher_id = p.ID || null;
-  parashaItem.teacher_title = p.Title;
-  parashaItem.teacher_fname = p.First;
-  parashaItem.teacher_lname = p.Last;
-
-  const hebrew = [];
-  const english = [];
-  for (let i = startPortion[0] - 1; i < endPortion[0]; i++) {
-    const fullHeb = tanach[book].hebrew[i];
-    const fullEng = tanach[book].english[i];
-    const newHeb = [];
-    const newEng = [];
-    if (i === startPortion[0] - 1 && startPortion[1] > 1) {
-      for (let j = startPortion[1] - 1; j < fullHeb.length; j++) {
-        newHeb.push(fullHeb[j]);
-        newEng.push(fullEng[j]);
-      }
-    } else if (i === endPortion[0] - 1 && endPortion[1] < fullHeb.length) {
-      for (let j = 0; j < endPortion[1]; j++) {
-        newHeb.push(fullHeb[j]);
-        newEng.push(fullEng[j]);
-      }
+    if (parashiyot[i + 1]) {
+      next.id = parashiyot[i + 1].Parsha.toLowerCase().replace(' ', '-');
+      next.name = parashiyot[i + 1].Parsha;
     } else {
-      for (let j = 0; j < fullHeb.length; j++) {
-        newHeb.push(fullHeb[j]);
-        newEng.push(fullEng[j]);
-      }
+      next.id = null;
+      next.name = null;
     }
-    hebrew.push(newHeb);
-    english.push(newEng);
+
+    const book = p.Book.toLowerCase();
+    const parasha = p.Parsha.toLowerCase().replace(' ', '-');
+
+    const parsedPortion = p.Portion.split(' ');
+    const startPortion = parsedPortion[1].split(':');
+    const endPortion = parsedPortion[3].split(':');
+
+    parashaItem.sefer = book;
+    parashaItem.book_name = book;
+    parashaItem.book_name_pretty_eng = p.Book;
+
+    parashaItem.perek_id = parasha;
+    parashaItem.parasha_name_pretty_eng = p.Parsha;
+
+    parashaItem.book_id = sefarimMeta[book].book_id;
+    parashaItem.book_num_chapters = sefarimMeta[book].numchapters;
+
+    parashaItem.sefer_sponsor = seferSponsors[book];
+    parashaItem.parasha_sponsor = parashaSponsors[parasha] || '';
+
+    parashaItem.start_chapter = parseInt(startPortion[0]);
+    parashaItem.start_verse = parseInt(startPortion[1]);
+    parashaItem.end_chapter = parseInt(endPortion[0]);
+    parashaItem.end_verse = parseInt(endPortion[1]);
+
+    const teacher = p.ID ? getTeacherInfoByID(p.ID) : null;
+    parashaItem.teacher_id = p.ID || null;
+    parashaItem.teacher_title = p.Title;
+    parashaItem.teacher_fname = p.First;
+    parashaItem.teacher_lname = p.Last;
+    parashaItem.teacher_bio   = teacher ? teacher.teacher_info.long_bio : null;
+    parashaItem.teacher_image = teacher ? teacher.teacher_info.image_url : null;
+
+    const hebrew = [];
+    const english = [];
+    for (let i = startPortion[0] - 1; i < endPortion[0]; i++) {
+      const fullHeb = tanach[book].hebrew[i];
+      const fullEng = tanach[book].english[i];
+      const newHeb = [];
+      const newEng = [];
+      if (i === startPortion[0] - 1 && startPortion[1] > 1) {
+        for (let j = startPortion[1] - 1; j < fullHeb.length; j++) {
+          newHeb.push(fullHeb[j]);
+          newEng.push(fullEng[j]);
+        }
+      } else if (i === endPortion[0] - 1 && endPortion[1] < fullHeb.length) {
+        for (let j = 0; j < endPortion[1]; j++) {
+          newHeb.push(fullHeb[j]);
+          newEng.push(fullEng[j]);
+        }
+      } else {
+        for (let j = 0; j < fullHeb.length; j++) {
+          newHeb.push(fullHeb[j]);
+          newEng.push(fullEng[j]);
+        }
+      }
+      hebrew.push(newHeb);
+      english.push(newEng);
+    }
+
+    parashaItem.hebrew_text = hebrew;
+    parashaItem.english_text = english;
+
+    parashaItem.prev_parasha_id = prev.id;
+    parashaItem.prev_parasha_name = prev.name;
+
+    parashaItem.next_parasha_id = next.id;
+    parashaItem.next_parasha_name = next.name;
+
+    prev.id = parasha;
+    prev.name = p.Parasha;
+
+    const file = `${i < 9 ? '0' + (i + 1) : i + 1}-${parasha}.json`;
+
+    bookParashiyot[book].push(parashaItem);
+    bookTeachers[book].push(teacher);
+
+    fs.writeFileSync(`${path.resolve(__dirname, 'output/parashiyot')}/${file}`, JSON.stringify(parashaItem));
+
+  });
+
+  generateSeferSeeds();
+}
+
+function getTeacherInfoByID(id) {
+  for(teacher in teachers) {
+    if (id === teachers[teacher].teacher_info.teacher_id) return teachers[teacher];
   }
+}
 
-  parashaItem.hebrew_text = hebrew;
-  parashaItem.english_text = english;
+function getUniqueTeachersOnly(teachers) {
+  const newArray = [];
+  const uniqueIDs = [];
+  teachers.forEach(t => {
+    if (uniqueIDs.indexOf(t.teacher_info.teacher_id) < 0) {
+      newArray.push(t);
+      uniqueIDs.push(t.teacher_info.teacher_id);
+    }
+  })
+  return newArray;
+}
 
-  const file = `${i < 9 ? '0' + (i + 1) : i + 1}-${parasha}.json`;
+function generateSeferSeeds() {
+  for(sefer in sefarimMeta) {
+    const currentSefer = sefarimMeta[sefer];
+    const seferItem = Object.assign({}, seferTemplate);
+    seferItem.seferTeachers = [];
+    seferItem.allPerakim = [];
 
-  books[book].push(parashaItem);
+    const currentTeachers = bookTeachers[sefer];
 
-  fs.writeFileSync(`${path.resolve(__dirname, 'output')}/${file}`, JSON.stringify(parashaItem));
+    const uniqueTeachers = getUniqueTeachersOnly(currentTeachers);
 
-});
+    uniqueTeachers.forEach(t => seferItem.seferTeachers.push(t.teacher_info));
+
+    seferItem.seferMeta.book_id = currentSefer.book_id;
+    seferItem.seferMeta.book_name = currentSefer.book_name;
+    seferItem.seferMeta.book_name_pretty = currentSefer.book_name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    seferItem.seferMeta.numchapters = currentSefer.numchapters;
+
+    const currentParashiyot = bookParashiyot[sefer];
+    currentParashiyot.forEach((p, i) => {
+      const teacher = getTeacherInfoByID(p.teacher_id);
+      const parashaItem = Object.assign({ perek_id: p.perek_id}, teacher.teacher_info);
+      seferItem.allPerakim.push(parashaItem);
+    });
+
+    const file = `sefer_${sefer}.json`;
+
+    fs.writeFileSync(`${path.resolve(__dirname, 'output/sefarim')}/${file}`, JSON.stringify(seferItem));
+  }
+  console.log('done')
+}
+
+getAllTeacherData();
+

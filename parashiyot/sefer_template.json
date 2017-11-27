@@ -2,6 +2,7 @@
   "seferMeta": {
     "book_id": null,
     "book_name": null,
+    "book_name_pretty": null,
     "numchapters": null,
     "part_id": 5,
     "part_name": "torah"
@@ -15,18 +16,13 @@
       "lname": null,
       "short_bio": null,
       "long_bio": null,
-      "image_url": null,
-      "book_id": null
+      "image_url": null
     }
   ],
   "allPerakim": [
     {
       "perek_id": null,
       "teacher_id": null,
-      "reader_id": null,
-      "is_many_parts": false,
-      "parts_breakdown": null,
-      "part_id": 5,
       "title": null,
       "fname": null,
       "mname": null,
