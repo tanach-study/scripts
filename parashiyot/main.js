@@ -235,11 +235,12 @@ function generateSeferSeeds() {
     seferItem.seferMeta.book_name = currentSefer.book_name;
     seferItem.seferMeta.book_name_pretty = currentSefer.book_name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     seferItem.seferMeta.numchapters = currentSefer.numchapters;
+    seferItem.seferMeta.book_sponsor = seferSponsors[sefer];
 
     const currentParashiyot = bookParashiyot[sefer];
     currentParashiyot.forEach((p, i) => {
       const teacher = getTeacherInfoByID(p.teacher_id);
-      const parashaItem = Object.assign({ perek_id: p.perek_id}, teacher.teacher_info);
+      const parashaItem = Object.assign({ perek_id: p.perek_id, pretty_name: p.parasha_name_pretty_eng }, teacher.teacher_info);
       seferItem.allPerakim.push(parashaItem);
     });
 
