@@ -20,20 +20,25 @@ with open("nach_perakim.csv", mode="w") as nachfile:
 
     # loop through all our books, writing to the file
     for book in data:
-        # get the name of the current sefer
-        sefer = book["seferMeta"]["book_name_pretty_eng"]
-        # loop through all the perakim in the sefer
-        for perek in book["allPerakim"]:
-            if perek["perek_id"] == 0:
-                perek_num = "Introduction"
-            else:
-                perek_num = perek["perek_id"]
+        if book["seferMeta"]["part_id"] != 5:
+            # get the name of the current sefer
+            sefer = book["seferMeta"]["book_name_pretty_eng"]
+            # loop through all the perakim in the sefer
+            for perek in book["allPerakim"]:
+                if perek["perek_id"] == 0:
+                    perek_num = "Intro"
+                else:
+                    perek_num = perek["perek_id"]
 
-            if perek["mname"] is not None:
-                teacher = perek["title"] + " " + perek["fname"] + " " + perek["mname"] + " " + perek["lname"]
-            else:
-                teacher = perek["title"] + " " + perek["fname"] + " " + perek["lname"]
+                if perek["mname"] is not None:
+                    teacher = perek["title"] + " " + perek["fname"] + " " + perek["mname"] + " " + perek["lname"]
+                else:
+                    teacher = perek["title"] + " " + perek["fname"] + " " + perek["lname"]
 
-            if perek["is_many_parts"] is True:
-                print True
-            nach_writer.writerow([sefer, perek_num, "", teacher])
+                if perek["is_many_parts"] is True:
+                    print perek["parts_breakdown"]
+                    parts = perek["parts_breakdown"].split(",")
+                    for part in parts:
+                        nach_writer.writerow([sefer, str(perek_num) + part, "", teacher])
+                else:
+                    nach_writer.writerow([sefer, str(perek_num), "", teacher])

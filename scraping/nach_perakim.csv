@@ -1,5 +1,5 @@
 Sefer,Perek,Title,Teacher
-Yehoshua,Introduction,,Mr. Jesse Salem
+Yehoshua,Intro,,Mr. Jesse Salem
 Yehoshua,1,,Mr. Jesse Salem
 Yehoshua,2,,Mr. Jesse Salem
 Yehoshua,3,,Mr. Jesse Salem
@@ -45,9 +45,10 @@ Shofetim,18,,Rabbi Joey M. Mizrachi
 Shofetim,19,,Rabbi Joey M. Mizrachi
 Shofetim,20,,Rabbi Joey M. Mizrachi
 Shofetim,21,,Rabbi Joey M. Mizrachi
-Shemuel1,Introduction,,Mrs. Marjorie Salem
+Shemuel1,Intro,,Mrs. Marjorie Salem
 Shemuel1,1,,Mrs. Marjorie Salem
-Shemuel1,2,,Mrs. Marjorie Salem
+Shemuel1,2a,,Mrs. Marjorie Salem
+Shemuel1,2b,,Mrs. Marjorie Salem
 Shemuel1,3,,Mrs. Marjorie Salem
 Shemuel1,4,,Mrs. Marjorie Salem
 Shemuel1,5,,Mrs. Marjorie Salem
@@ -575,7 +576,10 @@ Tehillim,115,,Rabbi Ikey Tawil
 Tehillim,116,,Rabbi Ikey Tawil
 Tehillim,117,,Rabbi Ikey Tawil
 Tehillim,118,,Rabbi Ikey Tawil
-Tehillim,119,,Rabbi David Tawil
+Tehillim,119a,,Rabbi David Tawil
+Tehillim,119b,,Rabbi David Tawil
+Tehillim,119c,,Rabbi David Tawil
+Tehillim,119d,,Rabbi David Tawil
 Tehillim,120,,Rabbi David Tawil
 Tehillim,121,,Rabbi David Tawil
 Tehillim,122,,Rabbi David Tawil
@@ -607,7 +611,8 @@ Tehillim,147,,Rabbi David Tawil
 Tehillim,148,,Mr. Jesse Salem
 Tehillim,149,,Mr. Michael Franco
 Tehillim,150,,Rabbi David Tawil
-Mishle,1,,Mrs. Shani Taragin
+Mishle,1a,,Mrs. Shani Taragin
+Mishle,1b,,Mrs. Shani Taragin
 Mishle,2,,Mrs. Shani Taragin
 Mishle,3,,Mrs. Shani Taragin
 Mishle,4,,Mrs. Shani Taragin
@@ -616,28 +621,35 @@ Mishle,6,,Mrs. Shani Taragin
 Mishle,7,,Mrs. Shani Taragin
 Mishle,8,,Mrs. Shani Taragin
 Mishle,9,,Mrs. Shani Taragin
-Mishle,10,,Mrs. Shani Taragin
+Mishle,10a,,Mrs. Shani Taragin
+Mishle,10b,,Mrs. Shani Taragin
 Mishle,11,,Mrs. Shani Taragin
 Mishle,12,,Dr. Yehudi Felman
 Mishle,13,,Dr. Yehudi Felman
-Mishle,14,,Dr. Yehudi Felman
+Mishle,14a,,Dr. Yehudi Felman
+Mishle,14b,,Dr. Yehudi Felman
 Mishle,15,,Dr. Yehudi Felman
 Mishle,16,,Dr. Yehudi Felman
 Mishle,17,,Dr. Yehudi Felman
 Mishle,18,,Dr. Yehudi Felman
-Mishle,19,,Dr. Yehudi Felman
+Mishle,19a,,Dr. Yehudi Felman
+Mishle,19b,,Dr. Yehudi Felman
 Mishle,20,,Dr. Yehudi Felman
 Mishle,21,,Dr. Yehudi Felman
-Mishle,22,,Dr. Yehudi Felman
+Mishle,22a,,Dr. Yehudi Felman
+Mishle,22b,,Dr. Yehudi Felman
 Mishle,23,,Dr. Yehudi Felman
-Mishle,24,,Dr. Yehudi Felman
+Mishle,24a,,Dr. Yehudi Felman
+Mishle,24b,,Dr. Yehudi Felman
 Mishle,25,,Dr. Yehudi Felman
 Mishle,26,,Dr. Yehudi Felman
 Mishle,27,,Dr. Yehudi Felman
 Mishle,28,,Dr. Yehudi Felman
 Mishle,29,,Dr. Yehudi Felman
-Mishle,30,,Dr. Yehudi Felman
-Mishle,31,,Dr. Yehudi Felman
+Mishle,30a,,Dr. Yehudi Felman
+Mishle,30b,,Dr. Yehudi Felman
+Mishle,31a,,Dr. Yehudi Felman
+Mishle,31b,,Dr. Yehudi Felman
 Iyov,1,,Rabbi Yitzchak Etshalom
 Iyov,2,,Rabbi Yitzchak Etshalom
 Iyov,3,,Rabbi Yitzchak Etshalom
@@ -680,8 +692,9 @@ Iyov,39,,Rabbi Yitzchak Etshalom
 Iyov,40,,Rabbi Yitzchak Etshalom
 Iyov,41,,Rabbi Yitzchak Etshalom
 Iyov,42,,Rabbi Yitzchak Etshalom
-Shir Hashirim,Introduction,,Mr. Jesse Salem
-Shir Hashirim,1,,Mr. Jesse Salem
+Shir Hashirim,Intro,,Mr. Jesse Salem
+Shir Hashirim,1a,,Mr. Jesse Salem
+Shir Hashirim,1b,,Mr. Jesse Salem
 Shir Hashirim,2,,Mr. Jesse Salem
 Shir Hashirim,3,,Mr. Jesse Salem
 Shir Hashirim,4,,Mr. Jesse Salem
@@ -689,20 +702,21 @@ Shir Hashirim,5,,Mr. Jesse Salem
 Shir Hashirim,6,,Mr. Jesse Salem
 Shir Hashirim,7,,Mr. Jesse Salem
 Shir Hashirim,8,,Mr. Jesse Salem
-Ruth,Introduction,,Rabbi Nathan Zaboulani
+Ruth,Intro,,Rabbi Nathan Zaboulani
 Ruth,1,,Rabbi Nathan Zaboulani
 Ruth,2,,Rabbi Nathan Zaboulani
 Ruth,3,,Rabbi Nathan Zaboulani
 Ruth,4,,Rabbi Nathan Zaboulani
-Eichah,Introduction,,Mr. David A. Cohen
+Eichah,Intro,,Mr. David A. Cohen
 Eichah,1,,Mr. David A. Cohen
 Eichah,2,,Mr. David A. Cohen
 Eichah,3,,Mr. David A. Cohen
 Eichah,4,,Mr. David A. Cohen
 Eichah,5,,Mr. David A. Cohen
-Kohelet,Introduction,,Mr. David A. Cohen
+Kohelet,Intro,,Mr. David A. Cohen
 Kohelet,1,,Mr. David A. Cohen
-Kohelet,2,,Mr. David A. Cohen
+Kohelet,2a,,Mr. David A. Cohen
+Kohelet,2b,,Mr. David A. Cohen
 Kohelet,3,,Mr. David A. Cohen
 Kohelet,4,,Mr. David A. Cohen
 Kohelet,5,,Mr. David A. Cohen
@@ -723,18 +737,21 @@ Esther,7,,Rabbi Richard Tobias
 Esther,8,,Rabbi Richard Tobias
 Esther,9,,Rabbi Richard Tobias
 Esther,10,,Rabbi Richard Tobias
-Daniel,Introduction,,Mrs. Gitta Neufeld
+Daniel,Intro,,Mrs. Gitta Neufeld
 Daniel,1,,Mrs. Gitta Neufeld
-Daniel,2,,Mrs. Gitta Neufeld
+Daniel,2a,,Mrs. Gitta Neufeld
+Daniel,2b,,Mrs. Gitta Neufeld
 Daniel,3,,Mrs. Gitta Neufeld
 Daniel,4,,Mrs. Gitta Neufeld
 Daniel,5,,Mrs. Gitta Neufeld
 Daniel,6,,Mrs. Gitta Neufeld
-Daniel,7,,Mrs. Gitta Neufeld
+Daniel,7a,,Mrs. Gitta Neufeld
+Daniel,7b,,Mrs. Gitta Neufeld
 Daniel,8,,Mrs. Gitta Neufeld
 Daniel,9,,Mrs. Gitta Neufeld
 Daniel,10,,Mrs. Gitta Neufeld
-Daniel,11,,Mrs. Gitta Neufeld
+Daniel,11a,,Mrs. Gitta Neufeld
+Daniel,11b,,Mrs. Gitta Neufeld
 Daniel,12,,Mrs. Gitta Neufeld
 Ezra,1,,Rabbi Avraham Benhamu
 Ezra,2,,Rabbi Avraham Benhamu
@@ -759,57 +776,3 @@ Nehemya,10,,Mr. Josh Setton
 Nehemya,11,,Mr. Josh Setton
 Nehemya,12,,Mr. Josh Setton
 Nehemya,13,,Mr. Josh Setton
-Bereshit,bereshit,,Rabbi Alex Israel
-Bereshit,noah,,Rabbi Alex Israel
-Bereshit,lech-lecha,,Rabbi Alex Israel
-Bereshit,vayera,,Rabbi Alex Israel
-Bereshit,haye-sarah,,Rabbi Alex Israel
-Bereshit,toledot,,Rabbi Gad Dishi
-Bereshit,vayetze,,Rabbi Gad Dishi
-Bereshit,vayishlah,,Rabbi Gad Dishi
-Bereshit,vayeshev,,Dr. Avigail Rock
-Bereshit,miketz,,Dr. Avigail Rock
-Bereshit,vayigash,,Dr. Avigail Rock
-Bereshit,vayhi,,Dr. Avigail Rock
-Shemot,shemot,,Dr. Yael Ziegler
-Shemot,vaera,,Dr. Yael Ziegler
-Shemot,bo,,Dr. Yael Ziegler
-Shemot,beshalah,,Dr. Yael Ziegler
-Shemot,yitro,,Rabbi Yitzchak Etshalom
-Shemot,mishpatim,,Rabbi Yitzchak Etshalom
-Shemot,teruma,,Rabbi Yitzchak Etshalom
-Shemot,tetzave,,Rabbi Yitzchak Etshalom
-Shemot,ki-tisa,,Rabbi Yitzchak Etshalom
-Shemot,vayakhel,,Rabbi Yitzchak Etshalom
-Shemot,pekude,,Rabbi Yitzchak Etshalom
-Vayikra,vayikra,,Mrs. Shani Taragin
-Vayikra,tzav,,Mrs. Shani Taragin
-Vayikra,shemini,,Mrs. Shani Taragin
-Vayikra,tazria,,Mrs. Shani Taragin
-Vayikra,metzora,,Mrs. Shani Taragin
-Vayikra,aharei-mot,,Mrs. Shani Taragin
-Vayikra,kedoshim,,Mrs. Shani Taragin
-Vayikra,emor,,Mrs. Shani Taragin
-Vayikra,behar,,Mrs. Shani Taragin
-Vayikra,behukotai,,Mrs. Shani Taragin
-Bemidbar,bemidbar,,Rabbi Jonathan Snowbell
-Bemidbar,naso,,Rabbi Jonathan Snowbell
-Bemidbar,behaalotecha,,Rabbi Jonathan Snowbell
-Bemidbar,shelah,,Rabbi Jonathan Snowbell
-Bemidbar,korah,,Rabbi Jonathan Snowbell
-Bemidbar,hukat,,Mrs. Yosefa Wruble
-Bemidbar,balak,,Mrs. Yosefa Wruble
-Bemidbar,pinehas,,Mrs. Yosefa Wruble
-Bemidbar,matot,,Mrs. Yosefa Wruble
-Bemidbar,masei,,Mrs. Yosefa Wruble
-Devarim,devarim,,Rabbi Menachem Leibtag
-Devarim,vaethanan,,Rabbi Menachem Leibtag
-Devarim,ekev,,Rabbi Menachem Leibtag
-Devarim,re'e,,Rabbi Menachem Leibtag
-Devarim,shofetim,,Rabbi Menachem Leibtag
-Devarim,ki-tetze,,Rabbi Menachem Leibtag
-Devarim,ki-tavo,,Rabbi Menachem Leibtag
-Devarim,nitzavim,,Rabbi Menachem Leibtag
-Devarim,vayelech,,Rabbi Menachem Leibtag
-Devarim,haazinu,,Rabbi Menachem Leibtag
-Devarim,vezot-haberacha,,Rabbi Menachem Leibtag
