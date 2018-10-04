@@ -1,0 +1,47 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "1",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "perakim"
+      },
+      "rule-action": "include"
+    },
+    {
+      "rule-type": "object-mapping",
+      "rule-id": "2",
+      "rule-name": "2",
+      "rule-action": "map-record-to-record",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "perakim"
+      },
+      "target-table-name": "perakim",
+      "mapping-parameters": {
+        "partition-key-name": "new_book_name",
+        "sort-key-name": "new_perek_id",
+        "exclude-columns" : [
+            "book_name",
+            "perek_id"
+        ],
+        "attribute-mappings": [
+          {
+            "target-attribute-name": "new_book_name",
+            "attribute-type": "string",
+            "attribute-sub-type": "string",
+            "value": "${book_name}"
+          },
+          {
+            "target-attribute-name": "new_perek_id",
+            "attribute-type": "scalar",
+            "attribute-sub-type": "string",
+            "value": "${perek_id}"
+          }
+        ]
+      }
+    }
+  ]
+}
