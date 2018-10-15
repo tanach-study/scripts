@@ -1,5 +1,14 @@
+import os
 import pandas as pd
-import pymongo
+from dotenv import load_dotenv
+from pymongo import MongoClient
+
+load_dotenv('.env')
+DB_STRING = os.getenv("DB_STRING")
+
+client = MongoClient(DB_STRING)
+db = client.ts
+perakim_collection = db.perakim
 
 perakim = pd.read_csv("./perakim.csv")
 
