@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const assert = require('assert');
 const perakim = require('./perakim.json');
+const teachers = require('./teachers.json');
 
 function getNachPerakim(a) {
   return a.filter(p => p.part_id < 5);
@@ -126,14 +127,75 @@ function getUnitName(item) {
   return item.perek_id;
 }
 
-function getPart(item) {
-  return item.parts_breakdown;
+function getPart(item, part) {
+  return part === '' ? null : part;
 }
 
-function getPartName(item) {
-  return item.key;
+function getPartName(item, part) {
+  return part === '' ? null : part;
 }
 
+function getSeries(item) {
+  return 'first';
+}
+
+function formatDir(passed) {
+  let str;
+  if (passed) str = passed.toLowerCase();
+  else return undefined;
+  const part1 = str.replace(/(?:^\w|[A-Z]|\b\w)/g, (match) => {
+    if (+match === 0) return '';
+    return match.toUpperCase();
+  });
+  const part2 = part1.replace(/-/g, ' ');
+  return part2;
+}
+
+function getAudioURL(item, part) {
+  const partName = encodeURIComponent(formatDir(item.part_name));
+  const seferName = encodeURIComponent(formatDir(item.book_name));
+  const fileName = `${item.book_name.replace(/ /g, '-')}-${item.perek_id}.mp3`;
+  const fileBase = fileName.replace('.mp3', '');
+  return {
+    host: 'https://cdn.tanachstudy.com',
+    path: `/archives/${partName}/${seferName}/${fileBase}${part}.mp3`,
+  };
+}
+
+function getTeacherTitle(item) {
+  return item.teacher_title;
+}
+
+function getTeacherFirstName(item) {
+  return item.teacher_fname;
+}
+
+function getTeacherMiddleName(item) {
+  return item.teacher_mname;
+}
+
+function getTeacherLastName(item) {
+  return item.teacher_lname;
+}
+
+function getTeacherObjectByID(id) {
+  return teachers.filter(t => t.teacher_info.teacher_id === id)[0];
+}
+
+function getTeacherShortBio(item) {
+  const teacherObj = getTeacherObjectByID(item.teacher_id);
+  return teacherObj.teacher_info.short_bio;
+}
+
+function getTeacherLongBio(item) {
+  const teacherObj = getTeacherObjectByID(item.teacher_id);
+  return teacherObj.teacher_info.long_bio;
+}
+
+function getTeacherPicture(item) {
+  const teacherObj = getTeacherObjectByID(item.teacher_id);
+  return teacherObj.teacher_info.image_url;
+}
 
 function convertPerakim(np) {
   for (let i = 0; i < np.length; i++) {
@@ -157,10 +219,22 @@ function convertPerakim(np) {
       model.unit = getUnit(p);
       model.unit_name = getUnitName(p);
       model.unit_title = null;
-      model.part = getPart(p);
-      model.part_name = getPartName(p);
+      model.part = getPart(p, part);
+      model.part_name = getPartName(p, part);
       model.part_title = null;
 
+      model.series = getSeries(p);
+      model.series_name = null;
+
+      model.audio_url = getAudioURL(p, part);
+
+      model.teacher_title = getTeacherTitle(p);
+      model.teacher_fname = getTeacherFirstName(p);
+      model.teacher_mname = getTeacherMiddleName(p);
+      model.teacher_lname = getTeacherLastName(p);
+      model.teacher_short_bio = getTeacherShortBio(p);
+      model.teacher_long_bio = getTeacherLongBio(p);
+      model.teacher_image_url = getTeacherPicture(p);
 
       transformed.push(model);
     }
