@@ -1,0 +1,814 @@
+[
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38a"
+    },
+    "teacher_info": {
+      "teacher_id": 1019,
+      "title": "Mr.",
+      "fname": "Mickey",
+      "mname": null,
+      "lname": "Abraham",
+      "short_bio": "Medical Student at Rutgers University",
+      "long_bio": "First year medical student at Rutgers New Jersey medical school.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_Mickey_Abraham.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38b"
+    },
+    "teacher_info": {
+      "teacher_id": 1029,
+      "title": "Rabbi",
+      "fname": "Avraham",
+      "mname": null,
+      "lname": "Benhamu",
+      "short_bio": "Assistant Rabbi at Cong. Shaare Shalom, Rabbi at Yeshivah of Flatbush",
+      "long_bio": "Rabbi Avraham Benhamu was born in London and raised in Bogota, Colombia. He  studied in Israel at Yeshivat Birkat Moshe in Maale Adumim. Rabbi Benhamu graduated from Yeshiva University and then received Semicha from its affiliated Rabbi Isaac Elhanan Theological Seminary (RIETS). He then went on to receive his Master’s degree in Jewish History from the Graduate School for Jewish Studies (GSJS) at Touro College. Rabbi Benhamu has been a Judaic studies teacher in Yeshiva of Flatbush Middle Division for 21 years. He is currently the Chairman of Judaic Studies and Curriculum at the Yeshiva. Rabbi Benhamu runs Bnai Shaare Shalom Young Adult Minyan which hosts many exciting events throughout the year. He and his wife Margaret have five children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Avraham_Benhamu.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "ezra",
+        "pretty_eng": "Ezra"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38c"
+    },
+    "teacher_info": {
+      "teacher_id": 1005,
+      "title": "Ms.",
+      "fname": "Adele",
+      "mname": null,
+      "lname": "Chabot",
+      "short_bio": "Teacher at Horeb Israel",
+      "long_bio": "Adele Chabot has taught tanach in various community institutions over the years. She spent 6 years at Barkai Yeshivah teaching Torah, Halacha and Ivrit. In August 2016 Adele made aliyah. She currently teaches at Horev boys elementary school in Jerusalem. Adele is also a published author having written an inspirational book about her experiences in Israel called: The Best Secret Revealed: A Year in Israel (Targum, 2013).",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Ms_Adele_Chabot.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "melachim2",
+        "pretty_eng": "Melachim 2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38d"
+    },
+    "teacher_info": {
+      "teacher_id": 1012,
+      "title": "Rabbi",
+      "fname": "Shmuel",
+      "mname": null,
+      "lname": "Beyda",
+      "short_bio": "Rabbi at Avenue O Synagogue",
+      "long_bio": "Currently Senior Rabbi at Congregation Ohel Yeshua V'Sara, \"Avenue O Shul\" and JHS teacher at Magen David Yeshiva. Alumnus of MDY, Ner Israel, Talmudical Yeshiva of Philadelphia, Yeshivat Kol Yaakov and Sephardic Torah Center Kollel of Deal. Previously taught at Hillel Yeshiva, Mikdash Melech Jerusalem & Brooklyn, Maimonides Academy of L.A. & Ohr Hatorah.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Shmuel_Beyda.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "habakuk",
+        "pretty_eng": "Habakuk"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38e"
+    },
+    "teacher_info": {
+      "teacher_id": 1026,
+      "title": "Mr.",
+      "fname": "David",
+      "mname": "A.",
+      "lname": "Cohen",
+      "short_bio": "CPA",
+      "long_bio": "David is a member of the Hochmah Umussar and Sha'are Shalom Bateh Knesset. David is broadly interested in all aspects of Torah learning, but especially in the history of our traditions. David is married to Rebecca Cohen, a science teacher at James Madison HS and community Kallah teacher, and has four children across Yeshivat Barkai and Prospect Park Yeshivah. In his day job, David is an investment analyst for Soapstone Capital.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_David_Cohen.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "eichah",
+        "pretty_eng": "Eichah"
+      },
+      {
+        "book_name": "kohelet",
+        "pretty_eng": "Kohelet"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac38f"
+    },
+    "teacher_info": {
+      "teacher_id": 1016,
+      "title": "Mrs.",
+      "fname": "Rebecca",
+      "mname": null,
+      "lname": "Cohen",
+      "short_bio": "Judaic Studies Teacher Emeritus at MDY",
+      "long_bio": "Rebecca is a community Kallah teacher and member of Hochma U'mussar and Shaare Shalom Congregations. Rebecca's interest in the study of Tanakh developed throughout the course of her studies at Michlelet Mevaseret Yerushalayim, the Gush Summer Program for Women and at the Bernard Revel School of Jewish Studies. Rebecca has taught Biology and Jewish Philosophy to many community teens. She is married to David and her children attend Barkai and Prospect Park Yeshivot.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Rebecca_Cohen.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac390"
+    },
+    "teacher_info": {
+      "teacher_id": 1010,
+      "title": "Rabbi",
+      "fname": "Yair",
+      "mname": null,
+      "lname": "Elnadav",
+      "short_bio": "Rabbi at Kollel Aram Soba",
+      "long_bio": "Yair Elnadav studied in Yeshiva Torah Temima, Mir Jerusalem, and Yeshivat Ateret Torah.  After his marriage he moved to Jerusalem and continued his studies in Bet Midrash Aram Soba. He is a currently a businessman, and an Avreich in Kollel Yechave Daat. He has a Yore Yore Yadin Yadin from leading rabbis in Jerusalem. He currently lives in Har Nof, Jerusalem. He is married to Frieda (Sutton) and is a father to five children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Yair_Elnadav.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "amos",
+        "pretty_eng": "Amos"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac391"
+    },
+    "teacher_info": {
+      "teacher_id": 1004,
+      "title": "Rabbi",
+      "fname": "Gad",
+      "mname": null,
+      "lname": "Dishi",
+      "short_bio": "Teacher of Tanach in Israel, Author of \"Jacob's Family Dynamics\"",
+      "long_bio": "Rabbi Gad Dishi, Adv. Esq. is the author of Jacob’s Family Dynamics – Climbing the Rungs of the Ladder. He also holds an MA in Bible from Bar Ilan University after completing his thesis:  Religious and National Identity as a Unifying Theme for the Narratives of Ahab (1 Kings 16:29-22:40). In his day-to-day, he works as a real estate attorney in Israel providing legal and investment services to the community for the past 20 years. He has lectured internationally as scholar in residence and is the TanachStudy lecturer for 1 Kings and provided an overview introduction to the Book of Judges. Rav Dishi lives in Alon Shevut and can be frequently caught lecturing at the Hertzog College Ymei Iyun.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Gad_Dishi.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "melachim1",
+        "pretty_eng": "Melachim 1"
+      },
+      {
+        "book_name": "bereshit",
+        "pretty_eng": "Bereshit"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac392"
+    },
+    "teacher_info": {
+      "teacher_id": 1011,
+      "title": "Rabbi",
+      "fname": "Nathan",
+      "mname": null,
+      "lname": "Dweck",
+      "short_bio": "Rabbi at Sephardic Synagogue, Rabbi at Barkai Yeshivah",
+      "long_bio": "Rabbi Nathan Dweck is the rabbi of the Father-Son Minyan at Sephardic Synagogue (in Brooklyn, NY), Judaic Studies teacher at Barkai Yeshivah and the Executive Director of Tebah Educational Services. He received his Semikha from Yeshiva University’s Rabbi Isaac Elchanan Theological Seminary. He also received an M.A. in Talmudic Studies from the Bernard Revel Graduate School of Jewish Studies.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Nathan_Dweck.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "michah",
+        "pretty_eng": "Michah"
+      },
+      {
+        "book_name": "nahum",
+        "pretty_eng": "Nahum"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac393"
+    },
+    "teacher_info": {
+      "teacher_id": 1024,
+      "title": "Dr.",
+      "fname": "Yehudi",
+      "mname": null,
+      "lname": "Felman",
+      "short_bio": "Full Time Torah Student and Dermatologist",
+      "long_bio": "Dr. Yehudi Felman attended BTA, Yeshiva College, and graduated from YU’s Albert Einstein College of Medicine. Following an internship at Mount Sinai Hospital he completed his residency in dermatology at Columbia-Presbyterian in New York. Yehudi also received an MA and M. Phil in Hebrew Literature from Columbia University Graduate School and was appointed Assistant Professor of Hebrew at YU in 1970, teaching Tanakh and Ancient and Medieval Hebrew literature in the Erna Michael School of Jewish Studies and at Stern College from 1970 to 1976. He served as Director of the Bureau STI (sexually transmitted infections) Control for the New York City Health Department from 1976-1985. From 1967 until 2009 he was Clinical Professor of Dermatology at Downstate and in his own private practice of dermatology and STI. Yehudi retired in 2008 in order to learn Torah full time.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Dr_Yehudi_Felman.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "mishle",
+        "pretty_eng": "Mishle"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac394"
+    },
+    "teacher_info": {
+      "teacher_id": 1015,
+      "title": "Rabbi",
+      "fname": "Yitzchak",
+      "mname": null,
+      "lname": "Etshalom",
+      "short_bio": "Author of \"Between the Lines of the Bible – Genesis\"",
+      "long_bio": "Rav Yitzchak Etshalom was born and raised in Los Angeles, California. He attended Yeshivat Kerem B'Yavne, Rabbi Isaac Elhanan Theological Seminary and Yeshivat Har Etzion before receiving Semicha from the Chief Rabbi of Yerushalayim, Rabbi Itzhak Kolitz. Rav Etshalom has been a dynamic and exciting educator in the Los Angeles community since his return in 1985. His ability to reach out to today's youth and share with them his passion for Jewish learning and Jewish life has enriched many young lives. His critically acclaimed series \"Between the Lines of the Bible\" is a methodological guide to the study of Tanakh. He has recently assumed the role of Rosh Beit Midrash at YULA Girls’ High School and leads this groundbreaking Limudei Kodesh program for young women. Rav Etshalom continues to direct the Tanach Masters Program at YULA Boys’ High School as well as serving as a widely sought-after Scholar in Residence throughout the country. Rav Etshalom lectures annually at the prestigious \"Ymei Iyyun\" Tanakh Seminar at Herzog College. In addition, he teaches Daf Yomi and a popular Navi series at the Young Israel of Century City and his podcasts on Daf Yomi (www.dafyomiyicc.org) have attracted an international following, as have his T’nakh podcasts (www.etshalom.com/podcast) which are also available at www.yutorah.org and at www.ou.org. Rabbi Etshalom lives in Los Angeles with his wife Stefanie and their 5 children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Yitzchak_Etshalom.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "divre-hayamim-1",
+        "pretty_eng": "Divre Hayamim 1"
+      },
+      {
+        "book_name": "divre-hayamim-2",
+        "pretty_eng": "Divre Hayamim 2"
+      },
+      {
+        "book_name": "iyov",
+        "pretty_eng": "Iyov"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac395"
+    },
+    "teacher_info": {
+      "teacher_id": 1022,
+      "title": "Mr.",
+      "fname": "Michael",
+      "mname": null,
+      "lname": "Franco",
+      "short_bio": "Student at the Sephardic Rabbinical College and Medical Student at B.A.M.D. in Brooklyn College",
+      "long_bio": "Michael Franco is a simple layman who has a deep passion for tanakh. He was awarded Valedictorian of Magen David Yeshiva Elementary School and Yeshivah of Flatbush High School. Michael attended Brooklyn College's 7-year Medical Program, B.A.-M.D., and hopes to pursue a career in medicine. With God's help, Michael aspires to teach Tanakh some time in the future.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_Michael_Franco.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac396"
+    },
+    "teacher_info": {
+      "teacher_id": 1014,
+      "title": "Rabbi",
+      "fname": "Moses",
+      "mname": null,
+      "lname": "Haber",
+      "short_bio": "Rav Yeshivah at Barkai Yeshivah",
+      "long_bio": "Rabbi Moses Haber graduated from Magen David Elementary and Yeshivah of Flatbush High School. After spending a year and a half studying in Bet Midrash LeTorah (BMT) in Jerusalem, he went to Yeshiva University where he received a bachelor's degree in Psychology and a Master's in Education. After college, Rabbi Haber spent six years as co-owner of retail and wholesale operations in the optical industry. In 1999 Rabbi Haber was recruited to join the Sephardic Rabbinical College and received semikha in 2004. Rabbi Haber taught Torah, Tanakh, Halacha and Jewish Philosophy at Yeshiva of Flatbush High School. While at Kol Israel Congregation Rabbi Haber has taught classes on Mishnah, Halakha, Minhag and Jewish Philosophy. Rav Moshe as he is currently referred to, is now the Rav Yeshivah of Barkai Yeshivah and associate Rabbi at congregation Bnei Yitzhak where he continues his work helping old and young alike see the relevance and value of the Tora in the era of modernity and globalization.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Moses_Haber.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "malachi",
+        "pretty_eng": "Malachi"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac397"
+    },
+    "teacher_info": {
+      "teacher_id": 1002,
+      "title": "Rabbi",
+      "fname": "Joey",
+      "mname": "M.",
+      "lname": "Mizrachi",
+      "short_bio": "Rabbi at Beth Torah, Rabbi at Yeshivah of Flatbush",
+      "long_bio": "Rabbi Joseph Mizrachi is a teacher in Yeshivah of Flatbush as well as the rabbi of the Father/Son minyan in congregation Beth Torah. He has a masters degree in Jewish History and has been teaching tanakh in the community for 25 years.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Joey_Mizrachi.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "shofetim",
+        "pretty_eng": "Shofetim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac398"
+    },
+    "teacher_info": {
+      "teacher_id": 1003,
+      "title": "Mrs.",
+      "fname": "Marjorie",
+      "mname": null,
+      "lname": "Salem",
+      "short_bio": "Teacher at Allegra Franco Teachers Seminary",
+      "long_bio": "Marjorie Salem, taught Sefer Shemuel on Tanakh Study. In her current role as teacher at Allegra Franco School of Educational Leadership, she introduces women of the Sephardic Community to the thematic reading of the text, uncovering details while appreciating the comprehensive picture of each Sefer in its place in Tanakh. Along with her love of teaching is her love of learning. Enhancing her pedagogical skills over the past 12 summers in Israel at Herzog College in Gush Ezion continues to be one of the highlights of her year. Together with her husband, Sammy, they have brought up their children with a love and dedication to Torah and the land of Israel. ",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Marjorie_Salem.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "shemuel1",
+        "pretty_eng": "Shemuel 1"
+      },
+      {
+        "book_name": "shemuel2",
+        "pretty_eng": "Shemuel 2"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac399"
+    },
+    "teacher_info": {
+      "teacher_id": 1006,
+      "title": "Rabbi",
+      "fname": "Albert",
+      "mname": null,
+      "lname": "Setton",
+      "short_bio": "Rabbi at West Deal Synagogue, Rabbi at Hillel Yeshivah",
+      "long_bio": "Rabbi Albert Setton grew up in Ahaba V'ahva Cong learning under his Rabbi, Hacham Shimon Alouf. He also attended Yeshivah of Flatbush Elementary and High School. Post High School, he studied for several years he studied in Yeshivat Birkat Moshe under the tutelage of Rabbi Haim Sabato. He then pursued his semikha in the Sephardic Rabbinical College and obtained a BA from Brooklyn College. He currently resides in Deal, NJ, teaching Torah in Magen David of West Deal and Hillel Yeshiva High School, along with his wife Yaffa and his four children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Albert_Setton.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "yeshayahu",
+        "pretty_eng": "Yeshayahu"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39a"
+    },
+    "teacher_info": {
+      "teacher_id": 1009,
+      "title": "Mr.",
+      "fname": "Josh",
+      "mname": null,
+      "lname": "Setton",
+      "short_bio": "Student at the Sephardic Rabbinical College",
+      "long_bio": "Josh attended Yeshivah of Flatbush elementary and high school, and went on to learn at ישיבת ברכת משה in מעלה אדומים. He then studied at the Sephardic Rabbinical College and CUNY's Macaulay Honors College. Josh currently works in the biotechnology industry.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_Josh_Setton.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "hoshea",
+        "pretty_eng": "Hoshea"
+      },
+      {
+        "book_name": "yoel",
+        "pretty_eng": "Yoel"
+      },
+      {
+        "book_name": "ovadia",
+        "pretty_eng": "Ovadia"
+      },
+      {
+        "book_name": "yonah",
+        "pretty_eng": "Yonah"
+      },
+      {
+        "book_name": "sephania",
+        "pretty_eng": "Sephania"
+      },
+      {
+        "book_name": "hagai",
+        "pretty_eng": "Hagai"
+      },
+      {
+        "book_name": "nehemya",
+        "pretty_eng": "Nehemya"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39b"
+    },
+    "teacher_info": {
+      "teacher_id": 1017,
+      "title": "Mrs.",
+      "fname": "Aura",
+      "mname": null,
+      "lname": "Sutton",
+      "short_bio": "Judaic Studies Teacher Emeritus in MDY",
+      "long_bio": "Aura Sutton has been teaching Judaic Studies in the community for over 20 years. (She worked in various educational institutions, including Barkai Yeshiva & Allegra Franco School of Leadership.) She currently teaches at Magen David Yeshiva HS. Aura earned a BA in both Philosophy & Judaic Studies at Brooklyn College and an MA in Jewish Education & Leadership at Gratz College.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Aura_Sutton.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39c"
+    },
+    "teacher_info": {
+      "teacher_id": 1008,
+      "title": "Mr.",
+      "fname": "Ovadia",
+      "mname": null,
+      "lname": "Sutton",
+      "short_bio": "Teacher and Administrator at Yeshivat Moreshet Yerushalayim",
+      "long_bio": "Ovadia Sutton studied at Yehsivat Birkat Moshe in Maale Adumim for two years where he had the opportunity to learn under some of the finest Tanach scholars. He received a BA in mathematics from Baruch College and studied part time in the Sephardic Rabbinical College. He now works at Yeshivat Moreshet Yerushalayim in Israel.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_Ovadia_Sutton.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "yehezkel",
+        "pretty_eng": "Yehezkel"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39d"
+    },
+    "teacher_info": {
+      "teacher_id": 1007,
+      "title": "Rabbi",
+      "fname": "Harold",
+      "mname": null,
+      "lname": "Sutton",
+      "short_bio": "Rosh Yeshivah Magen David, Rosh Kollel SRC, Rabbi at Cong. Hochma Umussar",
+      "long_bio": "Rabbi Sutton studied at the Yeshiva of Flatbush, followed by two years of study at the Beit Midrash LeTorah in Jerusalem. He earned a degree in Psychology from Yeshiva University and studied towards a Master’s degree in Judaic studies at New York University. During that time, he met Rabbi Shimon Alouf and began to study with him on a daily basis for many years. Rabbi Sutton received Semicha from Hakham Ovadia Yosef, Hakham Meir Mazuz and Hakham Shimon Alouf. He served as the Rabbi of Cong. Bnei Yitzhak in Brooklyn, NY for 15 years, as well as Assistant Rosh Yeshiva of Magen David Yeshiva for 10 years. In 1998, Rabbi Sutton was named the Rosh Yeshiva of the Sephardic Rabbinical College alongside Hakham Shimon Alouf. As of 2015, Rabbi Sutton has been the Rosh Yeshiva of Magen David Yeshiva, Rosh Yeshiva of the Sephardic Rabbinical College, and the Rabbi of Cong. Hochma U’Mussar. Rabbi Sutton teaches Halacha in the Sephardic Rabbinical College as well as seminars in Jewish Philosophy and other topics. Rabbi Sutton served as Rabbi of the SCA minyan and summer learning program since 2009. Rabbi Sutton currently serves as the Rosh Yeshiva of Yeshivat Moreshet Yerushalayim.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Harold_Sutton.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "yirmiyahu",
+        "pretty_eng": "Yirmiyahu"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39e"
+    },
+    "teacher_info": {
+      "teacher_id": 1023,
+      "title": "Mrs.",
+      "fname": "Shani",
+      "mname": null,
+      "lname": "Taragin",
+      "short_bio": "Ram Tanakh in Midreshet Lindenbaum and Teacher at Matan",
+      "long_bio": "Shani Taragin is a lecturer at Matan. She has a B.A. and M.A. in Tanakh and Talmud from Bar Ilan University and she is currently pursuing her Ph.D. in Tanakh. Shani teaches Tanakh and Jewish Law at Matan and serves as a Ram Tanakh in Midreshet Lindenbaum. She also teaches at Migdal Oz, Shalavim for Women, Lander’s College and the Women’s Beit Midrash in Efrat and Ramat Shilo. Shani is a Yoetzet Halakha (Halakhic Advisor) and she serves on the local religious council dealing with issues of Jewish law and education.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Shani_Taragin.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "mishle",
+        "pretty_eng": "Mishle"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac39f"
+    },
+    "teacher_info": {
+      "teacher_id": 1001,
+      "title": "Mr.",
+      "fname": "Jesse",
+      "mname": null,
+      "lname": "Salem",
+      "short_bio": "Founder of Tanach Study",
+      "long_bio": "Jesse Salem is the founder of Tanach Study. He studied in Israel at Yeshivat Birkat Moshe in Maale Adumim, and in 2007 enlisted and served in the IDF Handassah K’ravit (combat engineering) unit. He is currently Vice President of Congregation Hochma U’mussar in Brooklyn, and an active board member of Barkai Yeshivah NY. In his day-to-day he manages a textile business in midtown Manhattan. He and his wife Rochelle have three children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mr_Jesse_Salem.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "yehoshua",
+        "pretty_eng": "Yehoshua"
+      },
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      },
+      {
+        "book_name": "shir-hashirim",
+        "pretty_eng": "Shir Hashirim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a0"
+    },
+    "teacher_info": {
+      "teacher_id": 1021,
+      "title": "Rabbi",
+      "fname": "David",
+      "mname": null,
+      "lname": "Tawil",
+      "short_bio": "Rabbi at Barkai Yeshiva",
+      "long_bio": "Rabbi David Tawil is a graduate of MDY elementary and high school. He spent a year at Yeshivat Torat Shraga in Israel, and then in Brooklyn College where he received a BA in  psychology. He received semicha from the Sephardic Rabbinical College and is currently a teacher at Barkai Yeshivah and assistant rabbi at Congregation Shaare Shalom.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_David_Tawil.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a1"
+    },
+    "teacher_info": {
+      "teacher_id": 1020,
+      "title": "Rabbi",
+      "fname": "Ikey",
+      "mname": null,
+      "lname": "Tawil",
+      "short_bio": "Rabbi at Magen David Yeshiva",
+      "long_bio": "Rabbi Isaac Tawil, originally from Brooklyn, NY, is a graduate of Magen David Yeshiva High School, BMT in Israel, Yeshiva University Sy Syms school of Business and received Semicha from the Sephardic Rabbinical College. Rabbi Tawil is the head Rabbi at Kol Israel Congregation and the Dean of Student Life at Magen David Yeshiva High School, where he also runs special events and Hessed projects.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Ikey_Tawil.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a2"
+    },
+    "teacher_info": {
+      "teacher_id": 1013,
+      "title": "Mrs.",
+      "fname": "Miriam",
+      "mname": null,
+      "lname": "Tawil",
+      "short_bio": "Founder of Eshel Seminary Israel",
+      "long_bio": "Experienced educator, administrator, founder of Midreshet Eshel, wife and mother. Mrs. Tawil is a caring and passionate educator. MS Jewish Philosophy, Revel Yeshiva University. MS Jewish Education Azrieli, Yeshiva University. Past Chair Jewish Philosophy Dept. Magen David Yeshivah H.S. and Executive Director of Barkai Yeshiva.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Miriam_Tawil.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "zecharia",
+        "pretty_eng": "Zecharia"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a3"
+    },
+    "teacher_info": {
+      "teacher_id": 1018,
+      "title": "Rabbi",
+      "fname": "Ralph",
+      "mname": null,
+      "lname": "Tawil",
+      "short_bio": "Author of \"Table Talks\"",
+      "long_bio": "Rabbi Ralph Tawil served as an educator and rabbi in the Syrian Jewish community under Rabbi Moshe Shamah, Rabbi Raymond Harari, Rabbi Ezra Labaton, ob\"m  and Rabbi Zevulun Lieberman, ob\"m. He was principal in several schools in Israel and the United States. He currently works as a teacher in Jerusalem.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Ralph_Tawil.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "tehillim",
+        "pretty_eng": "Tehillim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a4"
+    },
+    "teacher_info": {
+      "teacher_id": 1027,
+      "title": "Rabbi",
+      "fname": "Richard",
+      "mname": null,
+      "lname": "Tobias",
+      "short_bio": "Rabbi at Magen David Yeshiva",
+      "long_bio": "Rabbi Richard Tobias earned a BA psychology from Yeshiva University. Rabbinic ordination from the Sephardic Rabbinical College under the auspices of former chief rabbi of large, Ovadia Yosef. He earned a masters degree in educational leadership from Columbia University. Dean, Magen David Yeshiva High School. Assistant Rabbi, Congregation Beth Torah. Father of four, which is the hardest job of all.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Richard_Tobias.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "esther",
+        "pretty_eng": "Esther"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a5"
+    },
+    "teacher_info": {
+      "teacher_id": 1028,
+      "title": "Mrs.",
+      "fname": "Gitta",
+      "mname": null,
+      "lname": "Neufeld",
+      "short_bio": "Head of Allegra Franco Teachers Seminary",
+      "long_bio": "Mrs. Gitta J. Neufeld is the Director of Education at the Allegra Franco School of Educational Leadership. She earned her BA and Masters from Queens College in communications, with a minor in education. She went on to earn her second Masters from Pace University in School Administration and Supervision. She is currently enrolled in a doctoral program, researching factors affecting young women's post-secondary educational and career choices. Mrs. Neufeld has over 40 years of teaching experience in both yeshivot and public schools.  In addition to her teaching at AFSEL, she teaches women's classes in several locations in the New York area.  In May 2012, the Covenant Foundation announced that Mrs. Neufeld was a recipient of the prestigious Excellence in Education Award, which was presented at a national event in November 2012. Mrs. Neufeld also serves as Director of Pedagogy for the Sephardic Rabbinical College.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Gitta_Neufeld.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "daniel",
+        "pretty_eng": "Daniel"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59c2dd9cc9b2d0713c6ac3a6"
+    },
+    "teacher_info": {
+      "teacher_id": 1025,
+      "title": "Rabbi",
+      "fname": "Nathan",
+      "mname": null,
+      "lname": "Zaboulani",
+      "short_bio": "Rabbi at Barkai Yeshiva and Student at the Sephardic Rabbinical College",
+      "long_bio": "Nathan studied in ישיבת ברכת משה in מעלה אדומים and Yeshiva University. He currently studies at the Sephardic Rabbinical College while teaching part time at Barkai Yeshivah and serving as the youth Rabbi at Kol Israel Congregation.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Nathan_Zaboulani.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "ruth",
+        "pretty_eng": "Ruth"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "59d1d379c9b2d0713c8fa860"
+    },
+    "teacher_info": {
+      "teacher_id": 1030,
+      "title": "Rabbi",
+      "fname": "Alex",
+      "mname": null,
+      "lname": "Israel",
+      "short_bio": "Rabbi at Yeshivat Eretz Hatzvi & Matan",
+      "long_bio": "Rabbi Alex Israel teaches Tanakh at Yeshivat Eretz Hatzvi and Matan, and is Director of Community Education at the Pardes Institute. Born and raised in London, Rabbi Israel moved to Israel in 1991 and gained rabbinic ordination from the Israeli Chief Rabbinate following several years of study at Yeshivat Har Etzion. Rabbi Israel holds degrees from London School of Economics, the Institute of Education, London, and Bar Ilan University. His first book \"I Kings - Torn in Two\" was published in 2013. See his shiurim and his weekly \"Parsha Discussion\" at www.alexisrael.org. Rabbi Israel has lectured widely at campuses and communities on five continents.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Alex_Israel.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "bereshit",
+        "pretty_eng": "Bereshit"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5a1b40bb28cba0c252e4329f"
+    },
+    "teacher_info": {
+      "teacher_id": 1033,
+      "title": "Dr.",
+      "fname": "Yael",
+      "mname": null,
+      "lname": "Ziegler",
+      "short_bio": "Senior lecturer in Tanakh at Herzog College and Matan",
+      "long_bio": "Dr. Yael Ziegler is a senior lecturer in Tanakh at Herzog College and Matan. She received her BA from Stern College and an MA and Ph.D. at Bar Ilan University. Dr. Ziegler has lectured widely on various Tanakh topics in Israel, the United States, South Africa, Australia, and Europe. Dr. Ziegler is the author of \"Promises to Keep: The Oath in Biblical Narrative\" and \"Ruth: From Alienation to Monarchy.\" Her forthcoming book on Megillat Eikhah is scheduled for publication in 2019. She lives in Alon Shvut, Israel, with her husband and their five children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Dr_Yael_Ziegler.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "shemot",
+        "pretty_eng": "Shemot"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5a1b40c828cba0c252e433ee"
+    },
+    "teacher_info": {
+      "teacher_id": 1034,
+      "title": "Rabbi",
+      "fname": "Jonathan",
+      "mname": null,
+      "lname": "Snowbell",
+      "short_bio": "Rabbi at Himelfarb High School, Jerusalem",
+      "long_bio": "Jonathan Snowbell studied in Yeshivat Or Etzion and Yeshiva University. From 1998 to 2005 he studied in Yeshivat Har Etzion, receiving his Rabbinical Ordination from the Chief Rabbinate. He has studied extensively with Rabbi Mordechai Sabato and continues to study with Rabbi Yaakov Medan. He has dedicated his educational career to teaching Talmud and Tanakh to young students in Himelfarb High School for Boys in Jerusalem. Jonathan lives in Alon Shvut with his wife Atara and their five children. ",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Jonathan_Snowbell.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "bemidbar",
+        "pretty_eng": "Bemidbar"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5a1b40cc28cba0c252e43466"
+    },
+    "teacher_info": {
+      "teacher_id": 1032,
+      "title": "Dr.",
+      "fname": "Avigail",
+      "mname": null,
+      "lname": "Rock",
+      "short_bio": "Senior lecturer at Matan",
+      "long_bio": "Dr. Avigail Poupko Rock holds a PhD in Tanach from Bar-Ilan University, has been teaching Tanach and Tora Shebeal Peh for over two decades in Israel and abroad. Dr. Rock is a senior lecturer at Matan, Her online classes appear through Yeshivat Har-Etzion's Virtual Bet Midrash. She is a certified Rabbinical Advocate, and lives in Bet Shemesh with her husband, Rabbi Yehuda Rock, and their five children.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Dr_Avigail_Rock.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "bereshit",
+        "pretty_eng": "Bereshit"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5a1b40d228cba0c252e434f7"
+    },
+    "teacher_info": {
+      "teacher_id": 1036,
+      "title": "Rabbi",
+      "fname": "Menachem",
+      "mname": null,
+      "lname": "Leibtag",
+      "short_bio": "Rabbi at Yeshivat Har Etzion",
+      "long_bio": "Rabbi Menachem Leibtag, founder of the Tanach Study Center www.tanach.org, is an internationally acclaimed bible scholar and pioneer of Jewish Education on the internet. His essays on Parshat ha’Shavua reflect his vibrant thematic-analytical approach, blending the methods of modern scholarship with traditional approaches. As a rebbe at Yeshivat Har Etzion, he is best known for his ability to teach students how to study Tanach. Rabbi Leibtag also teaches at Yeshivat Shaalavim, Midreshet Lindenbaum, & Matan; and routinely lectures around the globe, primarily as a Scholar in Residence in communities in North America.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Rabbi_Menachem_Leibtag.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "devarim",
+        "pretty_eng": "Devarim"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5a1b40d528cba0c252e43555"
+    },
+    "teacher_info": {
+      "teacher_id": 1031,
+      "title": "Mrs.",
+      "fname": "Deborah",
+      "mname": null,
+      "lname": "Geller",
+      "short_bio": "Tanach doctoral student at Bar-Ilan",
+      "long_bio": "Deborah is currently a doctoral student in the Bible department at Bar-Ilan University and a recipient of the Presidential Scholarship for doctoral studies. Her research entails an examination of revenge narratives in Tanach. She has taught Tanach in various community institutions since her Aliya in 2007, before which she taught Tanach, Halacha and Physics at the Samuel H. Wang Yeshiva University High School for Girls. Deborah holds Master’s degrees in Bible from Bar-Ilan and from the Bernard Revel Graduate School of Yeshiva University, as well as a Bachelor’s degree in Mathematics from Barnard College.",
+      "image_url": "https://cdn.tanachstudy.com/assets/images/Mrs_Deborah_Geller.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "bereshit",
+        "pretty_eng": "Bereshit"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5ad6b0666bd8cd8da9d8ccb4"
+    },
+    "teacher_info": {
+      "teacher_id": 1035.0,
+      "title": "Rabbi",
+      "fname": "Michael",
+      "mname": null,
+      "lname": "Hattin",
+      "short_bio": "Master Teacher at Pardes Institute",
+      "long_bio": "Michael Hattin is a master teacher of Tanakh and Halakha at the Pardes Institute of Jewish Studies in Jerusalem and serves as the Director of the Beit Midrash for the Pardes Center for Jewish Educators. He studied for semicha at Yeshivat Har Etzion and holds a professional degree in architecture from the University of Toronto. Michael is the author of Passages: Text and Transformation in the Parasha, published by Urim Publications in 2012 as well as Joshua: The Challenge of the Promised Land, published by Koren Publishers in March 2015. He has served as scholar-in-residence in many communities in North America and Europe and lives in Alon Shevut with his Rivka and their five children.",
+      "image_url": "http://cdn.tanachstudy.com/assets/images/Rabbi_Michael_Hattin.jpg"
+    },
+    "teacher_books": [
+      {
+        "book_name": "bemidbar",
+        "pretty_eng": "Bemidbar"
+      }
+    ]
+  }
+]
