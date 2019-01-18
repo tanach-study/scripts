@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const assert = require('assert');
+const fs = require('fs');
 const perakim = require('./perakim.json');
 const teachers = require('./teachers.json');
 
@@ -197,11 +198,25 @@ function getTeacherPicture(item) {
   return teacherObj.teacher_info.image_url;
 }
 
-function convertPerakim(np) {
-  for (let i = 0; i < np.length; i++) {
-    const p = np[i];
-    const transformed = [];
-    const partsBreakdown = p.parts_breakdown;
+function getTeamim(item) {
+  const oldTeamim = item.teamim;
+  if (oldTeamim && Array.isArray(oldTeamim)) {
+    oldTeamim.forEach(t => {
+      t.audio_url = t.url;
+      delete t.url;
+    });
+  } else if (oldTeamim) {
+    oldTeamim.audio_url = oldTeamim.url;
+    delete oldTeamim.url;
+  }
+  return oldTeamim || [];
+}
+
+function convertPerakim(perakim, transformed) {
+  for (let i = 0; i < perakim.length; i++) {
+    const p = perakim[i];
+    console.log('transforming: ', p.book_name, p.perek_id)
+    const partsBreakdown = p.parts_breakdown || '';
     const parts = Array.isArray(partsBreakdown) ? partsBreakdown : partsBreakdown.split(',');
     const loopCounter = parts.length || 1;
     for (let j = 0; j < loopCounter; j++) {
@@ -236,16 +251,20 @@ function convertPerakim(np) {
       model.teacher_long_bio = getTeacherLongBio(p);
       model.teacher_image_url = getTeacherPicture(p);
 
+      model.teamim = getTeamim(p);
+
       transformed.push(model);
     }
   }
 }
 
 function main(p) {
-  const nachPerakim = getNachPerakim(p);
-  const torahPerakim = getTorahPerakim(p);
-  assert(p.length === nachPerakim.length + torahPerakim.length);
-  convertPerakim(nachPerakim);
+  // const nachPerakim = getNachPerakim(p);
+  // const torahPerakim = getTorahPerakim(p);
+  // assert(p.length === nachPerakim.length + torahPerakim.length);
+  const t = []
+  convertPerakim(p, t);
+  fs.writeFileSync('output.json', JSON.stringify(t));
 }
 
 main(perakim);
