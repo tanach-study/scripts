@@ -328,6 +328,14 @@ function getSeries(item) {
   return 'first';
 }
 
+function getSeriesTitle(item) {
+  return 'First';
+}
+
+function getSeriesSequence(item) {
+  return 1;
+}
+
 function formatDir(passed) {
   let str;
   if (passed) str = passed.toLowerCase();
@@ -469,9 +477,9 @@ function convertPerakim(perakim, transformed) {
       model.part_sequence = getPartSequence(p, part);
       model.series = getSeries(p);
       model.series_name = null;
-      model.series_title = null;
+      model.series_title = getSeriesTitle(p);
       model.series_sponsor = null;
-      model.series_sequence = null;
+      model.series_sequence = getSeriesSequence(p);
 
       model.start_chapter = getStartChapter(p, part);
       model.start_verse = getStartVerse(p, part);
