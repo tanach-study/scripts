@@ -446,7 +446,7 @@ function getTeamim(item) {
     oldTeamim.audio_url = oldTeamim.url;
     delete oldTeamim.url;
   }
-  return oldTeamim || [];
+  return oldTeamim || null;
 }
 
 function convertPerakim(perakim, transformed) {
