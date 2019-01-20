@@ -549,9 +549,6 @@ function compare(a, b) {
 }
 
 function main(p) {
-  // const nachPerakim = getNachPerakim(p);
-  // const torahPerakim = getTorahPerakim(p);
-  // assert(p.length === nachPerakim.length + torahPerakim.length);
   const t = []
   convertPerakim(p, t);
   t.sort(compare);
