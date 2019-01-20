@@ -154,7 +154,7 @@ function getSectionSponsor(item) {
   if (item.sefer_sponsor) {
     return Array.isArray(item.sefer_sponsor) ? item.sefer_sponsor : [item.sefer_sponsor];
   } else {
-    return [];
+    return null;
   }
 }
 
@@ -221,13 +221,13 @@ function getUnitSponsor(item) {
     if (item.parasha_sponsor) {
       return Array.isArray(item.parasha_sponsor) ? item.parasha_sponsor : [item.parasha_sponsor];
     } else {
-      return [];
+      return null;
     }
   } else {
     if (item.perek_sponsor) {
       return Array.isArray(item.perek_sponsor) ? item.perek_sponsor : [item.perek_sponsor];
     } else {
-      return [];
+      return null;
     }
   }
 }
