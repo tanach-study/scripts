@@ -421,12 +421,33 @@ function convertPerakim(perakim, transformed) {
   }
 }
 
+function compare(a, b) {
+  if (a.division_sequence < b.division_sequence) {
+    return -1;
+  }
+
+  if (a.division_sequence > b.division_sequence) {
+    return 1;
+  }
+
+  if (a.section_sequence < b.section_sequence) {
+    return -1;
+  }
+
+  if (a.section_sequence > b.section_sequence) {
+    return 1;
+  }
+
+  return 0;
+}
+
 function main(p) {
   // const nachPerakim = getNachPerakim(p);
   // const torahPerakim = getTorahPerakim(p);
   // assert(p.length === nachPerakim.length + torahPerakim.length);
   const t = []
   convertPerakim(p, t);
+  t.sort(compare);
   fs.writeFileSync('output.json', JSON.stringify(t));
 }
 
