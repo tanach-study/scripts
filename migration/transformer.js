@@ -383,12 +383,21 @@ function getEndVerse(item, part) {
 function getAudioURL(item, part) {
   const partName = encodeURIComponent(formatDir(item.part_name));
   const seferName = encodeURIComponent(formatDir(item.book_name));
-  const fileName = `${item.book_name.replace(/ /g, '-')}-${item.perek_id}.mp3`;
-  const fileBase = fileName.replace('.mp3', '');
-  return {
-    host: 'https://cdn.tanachstudy.com',
-    path: `/archives/${partName}/${seferName}/${fileBase}${part}.mp3`,
-  };
+  if (item.part_id === 5) {
+    const fileName = `${item.perek_id.replace(/ /g, '-')}-${part.number}.mp3`;
+    const fileBase = fileName.replace('.mp3', '');
+    return {
+      host: 'https://cdn.tanachstudy.com',
+      path: `/archives/${partName}/${seferName}/${fileBase}.mp3`,
+    };
+  } else {
+    const fileName = `${item.book_name.replace(/ /g, '-')}-${item.perek_id}.mp3`;
+    const fileBase = fileName.replace('.mp3', '');
+    return {
+      host: 'https://cdn.tanachstudy.com',
+      path: `/archives/${partName}/${seferName}/${fileBase}${part}.mp3`,
+    };
+  }
 }
 
 function getTeacherTitle(item) {
