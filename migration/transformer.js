@@ -158,6 +158,52 @@ function getSectionSponsor(item) {
   }
 }
 
+function getSectionSequence(item) {
+  const section = getSection(item);
+  const sectionOrdering = {
+    yehoshua: 1,
+    shofetim: 2,
+    shemuel1: 3,
+    shemuel2: 4,
+    melachim1: 5,
+    melachim2: 6,
+    yeshayahu: 1,
+    yirmiyahu: 2,
+    yehezkel: 3,
+    hoshea: 1,
+    yoel: 2,
+    amos: 3,
+    ovadia: 4,
+    yonah: 5,
+    michah: 6,
+    nahum: 7,
+    habakuk: 8,
+    sephania: 9,
+    hagai: 10,
+    zecharia: 11,
+    malachi: 12,
+    'divre-hayamim-1': 1,
+    'divre-hayamim-2': 2,
+    tehillim: 3,
+    mishle: 4,
+    iyov: 5,
+    'shir-hashirim': 6,
+    ruth: 7,
+    eichah: 8,
+    kohelet: 9,
+    esther: 10,
+    daniel: 11,
+    ezra: 12,
+    nehemya: 13,
+    bereshit: 1,
+    shemot: 2,
+    vayikra: 3,
+    bemidbar: 4,
+    devarim: 5,
+  };
+  return sectionOrdering[section];
+}
+
 function getUnit(item) {
   return item.perek_id;
 }
@@ -346,7 +392,7 @@ function convertPerakim(perakim, transformed) {
       model.section_name = getSectionName(p);
       model.section_title = null;
       model.section_sponsor = getSectionSponsor(p);
-      model.section_sequence = null;
+      model.section_sequence = getSectionSequence(p);
       model.unit = getUnit(p);
       model.unit_name = getUnitName(p);
       model.unit_title = null;
