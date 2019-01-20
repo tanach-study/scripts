@@ -232,6 +232,71 @@ function getUnitSponsor(item) {
   }
 }
 
+function getUnitSequence(item) {
+  const unit = getUnit(item);
+  if (item.part_id === 5) {
+    const unitOrdering = {
+      bereshit: 1,
+      noah: 2,
+      'lech-lecha': 3,
+      vayera: 4,
+      'haye-sarah': 5,
+      toledot: 6,
+      vayetze: 7,
+      vayishlah: 8,
+      vayeshev: 9,
+      miketz: 10,
+      vayigash: 11,
+      vayhi: 12,
+      shemot: 1,
+      vaera: 2,
+      bo: 3,
+      beshalah: 4,
+      yitro: 5,
+      mishpatim: 6,
+      teruma: 7,
+      tetzave: 8,
+      'ki-tisa': 9,
+      vayakhel: 10,
+      pekude: 11,
+      vayikra: 1,
+      tzav: 2,
+      shemini: 3,
+      tazria: 4,
+      metzora: 5,
+      'aharei-mot': 6,
+      kedoshim: 7,
+      emor: 8,
+      behar: 9,
+      behukotai: 10,
+      bemidbar: 1,
+      naso: 2,
+      behaalotecha: 3,
+      shelah: 4,
+      korah: 5,
+      hukat: 6,
+      balak: 7,
+      pinehas: 8,
+      matot: 9,
+      masei: 10,
+      devarim: 1,
+      vaethanan: 2,
+      ekev: 3,
+      're\'e': 4,
+      shofetim: 5,
+      'ki-tetze': 6,
+      'ki-tavo': 7,
+      nitzavim: 8,
+      vayelech: 9,
+      haazinu: 10,
+      'vezot-haberacha': 11,
+    };
+    return unitOrdering[unit];
+  } else {
+    return unit;
+  }
+}
+
 function getPart(item, part) {
   if (part === null || part === '') {
     return null;
@@ -247,6 +312,15 @@ function getPartTitle(item, part) {
     return part.title;
   } else {
     return item.perek_title;
+  }
+}
+
+function getPartSequence(item, part) {
+  const finalPart = getPart(item, part);
+  if (finalPart) {
+    return finalPart;
+  } else {
+    return getUnit(item);
   }
 }
 
@@ -387,12 +461,12 @@ function convertPerakim(perakim, transformed) {
       model.unit_name = null;
       model.unit_title = getUnitTitle(p);
       model.unit_sponsor = getUnitSponsor(p);
-      model.unit_sequence = null;
+      model.unit_sequence = getUnitSequence(p);
       model.part = getPart(p, part);
       model.part_name = null;
       model.part_title = getPartTitle(p, part);
       model.part_sponsor = null;
-      model.part_sequence = null;
+      model.part_sequence = getPartSequence(p, part);
       model.series = getSeries(p);
       model.series_name = null;
       model.series_title = null;
@@ -435,6 +509,22 @@ function compare(a, b) {
   }
 
   if (a.section_sequence > b.section_sequence) {
+    return 1;
+  }
+
+  if (a.unit_sequence < b.unit_sequence) {
+    return -1;
+  }
+
+  if (a.unit_sequence > b.unit_sequence) {
+    return 1;
+  }
+
+  if (a.part_sequence < b.part_sequence) {
+    return -1;
+  }
+
+  if (a.part_sequence > b.part_sequence) {
     return 1;
   }
 
