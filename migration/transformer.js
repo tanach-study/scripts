@@ -17,25 +17,43 @@ function getNewModelTemplate() {
     division: '',
     division_name: '',
     division_title: '',
+    division_sponsor: '',
+    division_sequence: '',
 
     segment: '',
     segment_name: '',
     segment_title: '',
+    segment_sponsor: '',
+    segment_sequence: '',
 
     section: '',
     section_name: '',
     section_title: '',
+    section_sponsor: '',
+    section_sequence: '',
 
     unit: '',
     unit_name: '',
     unit_title: '',
+    unit_sponsor: '',
+    unit_sequence: '',
 
     part: '',
     part_name: '',
     part_title: '',
+    part_sponsor: '',
+    part_sequence: '',
 
     series: '',
     series_name: '',
+    series_title: '',
+    series_sponsor: '',
+    series_sequence: '',
+
+    start_chapter: '',
+    start_verse: '',
+    end_chapter: '',
+    end_verse: '',
 
     audio_url: '',
 
@@ -120,20 +138,60 @@ function getSectionName(item) {
   return item.book_name_pretty_eng;
 }
 
+function getSectionSponsor(item) {
+  if (item.sefer_sponsor) {
+    return Array.isArray(item.sefer_sponsor) ? item.sefer_sponsor : [item.sefer_sponsor];
+  } else {
+    return [];
+  }
+}
+
 function getUnit(item) {
   return item.perek_id;
 }
 
 function getUnitName(item) {
-  return item.perek_id;
+  if (item.part_id === 5) {
+    return item.parasha_name_pretty_eng;
+  } else {
+    return item.perek_id;
+  }
+}
+
+function getUnitSponsor(item) {
+  if (item.part_id === 5) {
+    if (item.parasha_sponsor) {
+      return Array.isArray(item.parasha_sponsor) ? item.parasha_sponsor : [item.parasha_sponsor];
+    } else {
+      return [];
+    }
+  } else {
+    if (item.perek_sponsor) {
+      return Array.isArray(item.perek_sponsor) ? item.perek_sponsor : [item.perek_sponsor];
+    } else {
+      return [];
+    }
+  }
 }
 
 function getPart(item, part) {
-  return part === '' ? null : part;
+  if (part === null || part === '') {
+    return null;
+  } else if (typeof part === 'object') {
+    return part.number;
+  } else {
+    return part;
+  }
 }
 
 function getPartName(item, part) {
-  return part === '' ? null : part;
+  if (part === null || part === '') {
+    return null;
+  } else if (typeof part === 'object') {
+    return part.number;
+  } else {
+    return part;
+  }
 }
 
 function getSeries(item) {
@@ -225,21 +283,38 @@ function convertPerakim(perakim, transformed) {
       model.division = getDivision(p);
       model.division_name = getDivisionTitle(p);
       model.division_title = null;
+      model.division_sponsor = null;
+      model.division_sequence = null;
       model.segment = null;
       model.segment_name = null;
       model.segment_title = null;
+      model.segment_sponsor = null;
+      model.segment_sequence = null;
       model.section = getSection(p);
       model.section_name = getSectionName(p);
       model.section_title = null;
+      model.section_sponsor = getSectionSponsor(p);
+      model.section_sequence = null;
       model.unit = getUnit(p);
       model.unit_name = getUnitName(p);
       model.unit_title = null;
+      model.unit_sponsor = getUnitSponsor(p);
+      model.unit_sequence = null;
       model.part = getPart(p, part);
       model.part_name = getPartName(p, part);
       model.part_title = null;
-
+      model.part_sponsor = null;
+      model.part_sequence = null;
       model.series = getSeries(p);
       model.series_name = null;
+      model.series_title = null;
+      model.series_sponsor = null;
+      model.series_sequence = null;
+
+      model.start_chapter = null;
+      model.start_verse = null;
+      model.end_chapter = null;
+      model.end_verse = null;
 
       model.audio_url = getAudioURL(p, part);
 
