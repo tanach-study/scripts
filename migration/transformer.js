@@ -130,6 +130,18 @@ function getDivisionTitle(item) {
   return name;
 }
 
+function getDivisionSequence(item) {
+  const division = getDivision(item);
+  const divisionOrdering = {
+    torah: 1,
+    neviim_rishonim: 2,
+    neviim_aharonim: 3,
+    tere_asar: 4,
+    ketuvim: 5,
+  };
+  return divisionOrdering[division];
+}
+
 function getSection(item) {
   return item.book_name;
 }
@@ -194,6 +206,14 @@ function getPartName(item, part) {
   }
 }
 
+function getPartTitle(item, part) {
+  if (item.part_id === 5) {
+    return part.title;
+  } else {
+    return item.perek_title;
+  }
+}
+
 function getSeries(item) {
   return 'first';
 }
@@ -208,6 +228,38 @@ function formatDir(passed) {
   });
   const part2 = part1.replace(/-/g, ' ');
   return part2;
+}
+
+function getStartChapter(item, part) {
+  if (item.part_id === 5) {
+    return part.start_chapter;
+  } else {
+    return item.perek_id;
+  }
+}
+
+function getStartVerse(item, part) {
+  if (item.part_id === 5) {
+    return part.start_verse;
+  } else {
+    return 1;
+  }
+}
+
+function getEndChapter(item, part) {
+  if (item.part_id === 5) {
+    return part.end_chapter;
+  } else {
+    return item.perek_id;
+  }
+}
+
+function getEndVerse(item, part) {
+  if (item.part_id === 5) {
+    return part.end_verse;
+  } else {
+    return null;
+  }
 }
 
 function getAudioURL(item, part) {
@@ -284,7 +336,7 @@ function convertPerakim(perakim, transformed) {
       model.division_name = getDivisionTitle(p);
       model.division_title = null;
       model.division_sponsor = null;
-      model.division_sequence = null;
+      model.division_sequence = getDivisionSequence(p);
       model.segment = null;
       model.segment_name = null;
       model.segment_title = null;
@@ -302,7 +354,7 @@ function convertPerakim(perakim, transformed) {
       model.unit_sequence = null;
       model.part = getPart(p, part);
       model.part_name = getPartName(p, part);
-      model.part_title = null;
+      model.part_title = getPartTitle(p, part);
       model.part_sponsor = null;
       model.part_sequence = null;
       model.series = getSeries(p);
@@ -311,10 +363,10 @@ function convertPerakim(perakim, transformed) {
       model.series_sponsor = null;
       model.series_sequence = null;
 
-      model.start_chapter = null;
-      model.start_verse = null;
-      model.end_chapter = null;
-      model.end_verse = null;
+      model.start_chapter = getStartChapter(p, part);
+      model.start_verse = getStartVerse(p, part);
+      model.end_chapter = getEndChapter(p, part);
+      model.end_verse = getEndVerse(p, part);
 
       model.audio_url = getAudioURL(p, part);
 
