@@ -146,7 +146,7 @@ function getSection(item) {
   return item.book_name;
 }
 
-function getSectionName(item) {
+function getSectionTitle(item) {
   return item.book_name_pretty_eng;
 }
 
@@ -208,7 +208,7 @@ function getUnit(item) {
   return item.perek_id;
 }
 
-function getUnitName(item) {
+function getUnitTitle(item) {
   if (item.part_id === 5) {
     return item.parasha_name_pretty_eng;
   } else {
@@ -233,16 +233,6 @@ function getUnitSponsor(item) {
 }
 
 function getPart(item, part) {
-  if (part === null || part === '') {
-    return null;
-  } else if (typeof part === 'object') {
-    return part.number;
-  } else {
-    return part;
-  }
-}
-
-function getPartName(item, part) {
   if (part === null || part === '') {
     return null;
   } else if (typeof part === 'object') {
@@ -304,7 +294,7 @@ function getEndVerse(item, part) {
   if (item.part_id === 5) {
     return part.end_verse;
   } else {
-    return null;
+    return 'end';
   }
 }
 
@@ -379,8 +369,8 @@ function convertPerakim(perakim, transformed) {
       const part = parts[j];
       const model = getNewModelTemplate();
       model.division = getDivision(p);
-      model.division_name = getDivisionTitle(p);
-      model.division_title = null;
+      model.division_name = null;
+      model.division_title = getDivisionTitle(p);
       model.division_sponsor = null;
       model.division_sequence = getDivisionSequence(p);
       model.segment = null;
@@ -389,17 +379,17 @@ function convertPerakim(perakim, transformed) {
       model.segment_sponsor = null;
       model.segment_sequence = null;
       model.section = getSection(p);
-      model.section_name = getSectionName(p);
-      model.section_title = null;
+      model.section_name = null;
+      model.section_title = getSectionTitle(p);
       model.section_sponsor = getSectionSponsor(p);
       model.section_sequence = getSectionSequence(p);
       model.unit = getUnit(p);
-      model.unit_name = getUnitName(p);
-      model.unit_title = null;
+      model.unit_name = null;
+      model.unit_title = getUnitTitle(p);
       model.unit_sponsor = getUnitSponsor(p);
       model.unit_sequence = null;
       model.part = getPart(p, part);
-      model.part_name = getPartName(p, part);
+      model.part_name = null;
       model.part_title = getPartTitle(p, part);
       model.part_sponsor = null;
       model.part_sequence = null;
