@@ -22,8 +22,8 @@ updates = []
 for i, row in zeraim.iterrows():
     s = row['Seder'].lower()
     m = row['Masechet'].lower().replace(' ', '-')
-    per = int(row['Perek'].lower())
-    mish = int(row['Mishna'].lower())
+    per = int(row['Perek'])
+    mish = int(row['Mishna'])
     title = row['Title']
     if title != "":
         updates.append(UpdateOne({ 
