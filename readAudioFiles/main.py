@@ -11,11 +11,12 @@ onlyfiles = [f for f in os.listdir(FILE_PATH) if os.path.isfile(os.path.join(FIL
 mishnayot = []
 for file in onlyfiles:
     name, extension = file.split('.')
-    parts = name.split('-')
+    replaced = name.replace('-', '_')
+    parts = name.split('_')
     masechet = str(parts[0])
-    perek = int(parts[1])
-    mishna = int(parts[2])
-    title = str(parts[3])
+    perek = str(parts[1])
+    mishna = str(parts[2])
+    title = ' '.join(parts[3:])
     pretty_title = title.replace('_', ' ')
     mishnayot.append([masechet, perek, mishna, pretty_title])
 
