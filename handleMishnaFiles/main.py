@@ -13,7 +13,8 @@ def run():
     files = [file_name]
     result = add_mishna_titles(files)
 
-    print(result)
+    return result
 
 if __name__ == '__main__':
-    run()
+    result = run()
+    print(result)
