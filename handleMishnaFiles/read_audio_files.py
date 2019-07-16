@@ -11,7 +11,7 @@ def get_mishnayot_from_files_at_path(path):
     for file in onlyfiles:
         name, extension = file.split('.')
         replaced = name.replace('-', '_')
-        parts = name.split('_')
+        parts = replaced.split('_')
         masechet = str(parts[0])
         seder = get_seder_from_masechet(masechet, True)
         perek = str(parts[1])
@@ -23,7 +23,7 @@ def get_mishnayot_from_files_at_path(path):
     mishnayot.sort(key = operator.itemgetter(1, 2))
     return mishnayot
 
-def write_mishnayot_to_csv_file(mishnayot=[], file_name='titles.csv')
+def write_mishnayot_to_csv_file(mishnayot=[], file_name='titles.csv'):
     with open(file_name, 'w') as outfile:
         writer = csv.writer(outfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(['Seder', 'Masechet', 'Perek', 'Mishna', 'Title'])

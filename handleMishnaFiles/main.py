@@ -1,6 +1,7 @@
+import os
 from dotenv import load_dotenv
 from read_audio_files import get_mishnayot_from_files_at_path, write_mishnayot_to_csv_file
-from add_mishna_titles.py import run as add_mishna_titles
+from add_mishna_titles import run as add_mishna_titles
 
 def run():
     load_dotenv('.env')
