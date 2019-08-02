@@ -12,8 +12,8 @@ def create_update_array(files=[]):
             for i, row in rows.iterrows():
                 s = row['Seder'].lower()
                 m = row['Masechet'].lower().replace(' ', '-')
-                per = int(row['Perek'])
-                mish = int(row['Mishna'])
+                per = str(row['Perek'])
+                mish = str(row['Mishna'])
                 title = row['Title']
                 if title != "":
                     updates.append(UpdateOne({ 
@@ -28,9 +28,10 @@ def create_update_array(files=[]):
 def perform_updates(updates=[]):
     load_dotenv('.env')
     DB_STRING = os.getenv('DB_STRING')
+    DB_NAME = os.getenv('DB_NAME')
 
     client = MongoClient(DB_STRING)
-    db = client.ts
+    db = client[DB_NAME]
     coll = db.newPerakim
     result = coll.bulk_write(updates)
     return result
@@ -38,7 +39,8 @@ def perform_updates(updates=[]):
 def run(files):
     updates = create_update_array(files)
     result = perform_updates(updates)
-    return result
+    str_result = result.bulk_api_result
+    return str_result
 
 if __name__ == '__main__':
     files = [
@@ -50,4 +52,4 @@ if __name__ == '__main__':
         "./taharot.csv",
     ]
     result = run(files)
-    print result
+    print(result)
