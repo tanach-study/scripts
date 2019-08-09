@@ -2,22 +2,22 @@ from dotenv import load_dotenv
 import glob
 import gzip
 import os
-from cloudfront_log_parser import parse
+import csv
 
 load_dotenv('.env')
 LOGS_PATH = os.getenv("LOGS_PATH")
 
-files = glob.glob(f'{LOGS_PATH}/*.gz')
+files = glob.glob('{}/*.gz'.format(LOGS_PATH))
 
-requests = 0
+lines = []
 
 for i, file in enumerate(files):
-    print(f'Opening file {i}...')
+    print('Opening file {}...'.format(i))
     with gzip.open(file, 'rb') as f:
-        file_content = f.read()
-        lines = file_content.decode('utf-8').split('\n')
         for j, line in enumerate(lines):
-            if '/archives' in line:
-                requests += 1
+            lines.append(line)
 
-print(f'Number of requests: {requests}')
+with open('out.csv', 'w') as outfile:
+    writer = csv.writer(outfile, delimiter=',')
+    for row in lines:
+        writer.writerow(row)
