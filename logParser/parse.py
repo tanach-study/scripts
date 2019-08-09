@@ -14,7 +14,11 @@ lines = []
 for i, file in enumerate(files):
     print('Opening file {}...'.format(i))
     with gzip.open(file, 'rb') as f:
-        for j, line in enumerate(f):
+        reader = csv.reader(f, delimiter='\t')
+        for j, line in enumerate(reader):
+            if i != 0:
+                if j == 0 or j == 1:
+                    continue
             lines.append(line)
 
 print(len(lines))
