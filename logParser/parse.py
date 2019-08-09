@@ -14,8 +14,10 @@ lines = []
 for i, file in enumerate(files):
     print('Opening file {}...'.format(i))
     with gzip.open(file, 'rb') as f:
-        for j, line in enumerate(lines):
+        for j, line in enumerate(f):
             lines.append(line)
+
+print(len(lines))
 
 with open('out.csv', 'w') as outfile:
     writer = csv.writer(outfile, delimiter=',')
