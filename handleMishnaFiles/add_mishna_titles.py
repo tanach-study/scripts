@@ -8,7 +8,7 @@ def create_update_array(files=[]):
 
     for file in files:
         if os.path.isfile(file):
-            rows = pd.read_csv(file, na_filter=False)
+            rows = pd.read_csv(file, na_filter=False, escapechar="\\")
             for i, row in rows.iterrows():
                 s = row['Seder'].lower()
                 m = row['Masechet'].lower().replace(' ', '-')
