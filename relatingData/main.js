@@ -1,10 +1,9 @@
-const PATH_TO_MONGO_EXPORT_JSON = '';
-const PATH_TO_TEACHERS_WITH_ID_JSON = ''
-
 const fs = require('fs');
+const dotenv = require('dotenv');
+dotenv.config({silent: true});
 
-const rawData = require(PATH_TO_MONGO_EXPORT_JSON);
-const teachers = require(PATH_TO_TEACHERS_WITH_ID_JSON);
+const rawData = require(process.env.PATH_TO_MONGO_EXPORT_JSON);
+const teachers = require(process.env.PATH_TO_TEACHERS_WITH_ID_JSON);
 
 const teacherDict = {};
 const output = ['BEGIN;'];
